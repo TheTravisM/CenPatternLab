@@ -1,9 +1,28 @@
+/* ==========================================================================
+   #SPACINGS
+   ========================================================================== */
+
+/**
+ * Utility classes to put specific spacing values onto elements. The below loop
+ * will generate us a suite of classes like:
+ *
+ *           margin top = .u-mt    { margin-top: 8px !important  }
+ *   padding left large = .u-pl-lg { padding-left: 16px !important }
+ *   margin right small = .u-mr-sm { margin-right: 8px !important }
+ *              padding = .u-p     { padding: 16px !important }
+ *     no padding right = .u-pr-0  { padding-right: 0 !important }
+ *   .u-padding-horizontal {}
+ *   .u-padding-vertical-small {}
+ */
+
+
+
 $spacing-breakpoints: (
-    null: 0px, // Extra small sreen / phone
-  "--sm":  576px, // Small screen / phone
-  "--md":  768px, // Medium screen / tablet
-  "--lg":  992px, // Large screen / desktop
-  "--xl": 1200px  // Extra large screen / wide desktop
+    null: 0px,    // Extra small sreen / phone         -- From    0px and up
+  "--sm":  576px, // Small screen / phone              -- From  576px and up
+  "--md":  768px, // Medium screen / tablet            -- From  768px and up
+  "--lg":  992px, // Large screen / desktop            -- From  992px and up
+  "--xl": 1200px  // Extra large screen / wide desktop -- From 1200px and up
 ) !default;
 
 $spacing-directions: (
@@ -12,23 +31,24 @@ $spacing-directions: (
   "r": "-right",
   "b": "-bottom",
   "l": "-left",
-  "h": "-left" "-right",
-  "v": "-top" "-bottom",
-  ) !default;
+  "h": "-left" "-right", // h stands for horizontal Left and Right
+  "v": "-top" "-bottom", // V stands for vertical Top and Bottom
+) !default;
 
 $spacing-properties: (
   "p": "padding",
   "m": "margin",
-  ) !default;
+) !default;
 
-$inuit-spacing-sizes: (
-   "-0": $spacing-0,
-   null: $base-spacing,
-  "-xxs": $spacing-xs,
-  "-xs": $spacing-xs,
-  "-sm": $spacing-sm,
-  "-lg": $spacing-lg,
-  "-xl": $spacing-xl
+$u-spacing-sizes: (
+    "-0": $spacing-0,     // 0px
+  "-xxs": $spacing-xxs,    // 2px
+   "-xs": $spacing-xs,    // 4px
+   "-sm": $spacing-sm,    // 8px
+   null:  $spacing-md,    // 16px
+   "-lg": $spacing-lg,    // 24px
+   "-xl": $spacing-xl,    // 32px
+  "-xxl": $spacing-xxl    // 40px
 
   ) !default;
 
@@ -40,7 +60,7 @@ $inuit-spacing-sizes: (
 
       @each $direction-namespace, $direction-rules in $spacing-directions {
 
-        @each $size-namespace, $size in $inuit-spacing-sizes {
+        @each $size-namespace, $size in $u-spacing-sizes {
 
           .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}#{$breakpoint} {
 

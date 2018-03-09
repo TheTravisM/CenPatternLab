@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+$breakpoint-xs  : 0;
+$breakpoint-sm  : 576px;
+$breakpoint-md  : 768px;
+$breakpoint-lg  : 992px;
+$breakpoint-xl  : 1200px;
+
+
+$breakpoints: (
+  xs:    0px, // Extra small sreen / phone
+  sm:  576px, // Small screen / phone
+  md:  768px, // Medium screen / tablet
+  lg:  992px, // Large screen / desktop
+  xl: 1200px  // Extra large screen / wide desktop
+) !default;

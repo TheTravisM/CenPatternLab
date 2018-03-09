@@ -1,0 +1,55 @@
+$spacing-breakpoints: (
+    null: 0px, // Extra small sreen / phone
+  "--sm":  576px, // Small screen / phone
+  "--md":  768px, // Medium screen / tablet
+  "--lg":  992px, // Large screen / desktop
+  "--xl": 1200px  // Extra large screen / wide desktop
+) !default;
+
+$spacing-directions: (
+  null: null,
+  "t": "-top",
+  "r": "-right",
+  "b": "-bottom",
+  "l": "-left",
+  "h": "-left" "-right",
+  "v": "-top" "-bottom",
+  ) !default;
+
+$spacing-properties: (
+  "p": "padding",
+  "m": "margin",
+  ) !default;
+
+$inuit-spacing-sizes: (
+   "-0": $spacing-0,
+   null: $base-spacing,
+  "-xxs": $spacing-xs,
+  "-xs": $spacing-xs,
+  "-sm": $spacing-sm,
+  "-lg": $spacing-lg,
+  "-xl": $spacing-xl
+
+  ) !default;
+
+@each $breakpoint, $property in $spacing-breakpoints {
+
+  @media (min-width: #{$property}) {
+
+    @each $property-namespace, $property in $spacing-properties {
+
+      @each $direction-namespace, $direction-rules in $spacing-directions {
+
+        @each $size-namespace, $size in $inuit-spacing-sizes {
+
+          .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}#{$breakpoint} {
+
+            @each $direction in $direction-rules {
+              #{$property}#{$direction}: $size !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

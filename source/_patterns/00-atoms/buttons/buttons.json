@@ -1,0 +1,7 @@
+{
+  "tag": "a",
+  "link": "https://google.com",
+  "text": "Hello!",
+  "btnStyle" : "green",
+  "color" : "red"
+}

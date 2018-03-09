@@ -1,0 +1,26 @@
+{
+  "button":{
+    "tag": "a",
+    "link": "https://google.com",
+    "text": "Hello!"
+  },
+
+  "lists": {
+    "list": [
+      {
+        "item": "name 1"
+      },
+      {
+        "item": "name 2"
+      },
+      {
+        "item": "name 3"
+      },
+      {
+        "item": "name 4"
+      }
+    ]
+  }
+
+}
+

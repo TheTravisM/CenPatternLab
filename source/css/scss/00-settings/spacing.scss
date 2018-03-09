@@ -1,0 +1,14 @@
+/* -- ---------------------------- -- */
+/* -- [ UTILITIES : BASE SPACING ] -- */
+/* -- ---------------------------- -- */
+
+$base-spacing: .5rem; // 8px
+
+$spacing-0   : 0;                        // 0px
+$spacing-xxs : $base-spacing / 4;        // 2px
+$spacing-xs  : $base-spacing / 2;        // 4px
+$spacing-sm  : $base-spacing;            // 8px
+$spacing-md  : $base-spacing * 2;        // 16px
+$spacing-lg  : $base-spacing * 3;        // 24px
+$spacing-xl  : $base-spacing * 4;        // 32px
+$spacing-xxl : $base-spacing * 5;        // 40px

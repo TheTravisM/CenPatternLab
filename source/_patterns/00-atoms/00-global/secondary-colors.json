@@ -33,22 +33,22 @@
     {
       "className" : "u-bg-secondary07",
       "variable" : "$secondary07",
-      "hexCode" : "#3f3f3f"
+      "hexCode" : "#006298 "
     },
     {
       "className" : "u-bg-secondary08",
       "variable" : "$secondary08",
-      "hexCode" : "#3f3f3f"
+      "hexCode" : "#71c5e8"
     },
     {
       "className" : "u-bg-secondary09",
       "variable" : "$secondary09",
-      "hexCode" : "#3f3f3f"
+      "hexCode" : "#87d6f8"
     },
     {
       "className" : "u-bg-secondary10",
       "variable" : "$secondary10",
-      "hexCode" : "#3f3f3f"
+      "hexCode" : "#d0d3d4"
     }
   ]
 }

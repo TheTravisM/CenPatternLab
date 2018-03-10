@@ -3,6 +3,8 @@
  * styles for grids, animations, color swatches, etc.
  * These styles will not be your production CSS.
  */
+
+
 #sg-patterns {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
@@ -25,6 +27,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif !important;
+
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;

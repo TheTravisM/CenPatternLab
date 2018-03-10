@@ -1,5 +1,14 @@
 @charset "UTF-8";
-/* SETTINGS */
+/*------------------------------------*/* -- SETTINGS -----------------------*/
+/*------------------------------------*
+// settings: Global variables, site-wide settings, config switches, etc.
+
+* SETTINGS
+* Config...............Project-level configuration and feature switches.
+* Core.................inuitcss’ core and setup settings.
+* Global...............Project-wide variables and settings.
+
+*/
 /* Borders */
 /*
 $border-color: $messer-warm-gray-50;
@@ -10,7 +19,7 @@ $border-radius-lg: 5px;
 
 $box-shadow: 0 1px 1px rgba($header-color-dark, .3);
 */
-/*------------------------------------*    #BREAKPOINTS
+/*------------------------------------*    SETTINGS - BREAKPOINTS
 \*------------------------------------*/
 /* -- ---------------------------- -- */
 /* -- [ UTILITIES : BASE SPACING ] -- */
@@ -41,13 +50,106 @@ $box-shadow: 0 1px 1px rgba($header-color-dark, .3);
 
 /* max width of document */
 /* not used */
-/* tools: Site-wide mixins and functions. */
-/* generic: Low-specificity, far-reaching rulesets (e.g. resets) */
+/*------------------------------------*/* -- TOOLS--- -----------------------*/
+/*------------------------------------*
+/* tools: Site-wide mixins and functions.
+
+ * TOOLS
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+
+*/
+/* generic: Low-specificity, far-reaching rulesets (e.g. resets)
+
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+*/
+/*------------------------------------*/* -- ELEMENTS -----------------------*/
+/*------------------------------------*
 /*
   Elements: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
 
   Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
-*/
+
+   * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+
+ */
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+body {
+  color: #3f3f3f;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px; }
+
+.serif {
+  font-family: 'Cordale', serif;
+  font-size: 18px;
+  line-height: 32px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 60px;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 50px;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 40px;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 26px;
+  font-weight: 200; }
+
+h5 {
+  font-size: 22px;
+  font-weight: 700; }
+
+h6 {
+  font-size: 18px;
+  font-weight: 700; }
+
+a {
+  color: #0085ca; }
+
+span.correct {
+  color: #6f9823;
+  text-transform: uppercase; }
+
+span.incorrect {
+  color: #ef0000;
+  text-transform: uppercase; }
+
 /* 
 
   o-: Signify that something is an Object, 
@@ -191,6 +293,18 @@ $box-shadow: 0 1px 1px rgba($header-color-dark, .3);
 
 .u-bg-secondary06 {
   background-color: #dfdfdf !important; }
+
+.u-bg-secondary07 {
+  background-color: #006298 !important; }
+
+.u-bg-secondary08 {
+  background-color: #71c5e8 !important; }
+
+.u-bg-secondary09 {
+  background-color: #87d6f8 !important; }
+
+.u-bg-secondary10 {
+  background-color: #d0d3d4 !important; }
 
 /* -- [ Primary BACKGROUND COLORS] -- */
 .u-bg-accent01 {

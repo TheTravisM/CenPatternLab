@@ -1,0 +1,29 @@
+{
+  "colors":[
+    {
+      "className" : "u-bg-limited01",
+      "variable" : "$limited01",
+      "hexCode" : "#ef0000"
+    },
+    {
+      "className" : "u-bg-limited02",
+      "variable" : "$limited02",
+      "hexCode" : "#ff5858"
+    },
+    {
+      "className" : "u-bg-limited03",
+      "variable" : "$limited03",
+      "hexCode" : "#ececec"
+    },
+    {
+      "className" : "u-bg-limited04",
+      "variable" : "$limited04",
+      "hexCode" : "#e0004d"
+    },
+    {
+      "className" : "u-bg-limited05",
+      "variable" : "$limited05",
+      "hexCode" : "#ffc72c"
+    }
+  ]
+}

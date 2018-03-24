@@ -1,0 +1,55 @@
+{
+  "colors":[
+    {
+      "className" : "u-bg-secondary01",
+      "variable" : "$secondary01",
+      "hexCode" : "#3f3f3f"
+    },
+    {
+      "className" : "u-bg-secondary02",
+      "variable" : "$secondary02",
+      "hexCode" : "#3f3f3f"
+    },
+    {
+      "className" : "u-bg-secondary03",
+      "variable" : "$secondary03",
+      "hexCode" : "#3f3f3f"
+    },
+    {
+      "className" : "u-bg-secondary04",
+      "variable" : "$secondary04",
+      "hexCode" : "#3f3f3f"
+    },
+    {
+      "className" : "u-bg-secondary05",
+      "variable" : "$secondary05",
+      "hexCode" : "#3f3f3f"
+    },
+    {
+      "className" : "u-bg-secondary06",
+      "variable" : "$secondary06",
+      "hexCode" : "#3f3f3f"
+    },
+    {
+      "className" : "u-bg-secondary07",
+      "variable" : "$secondary07",
+      "hexCode" : "#006298 "
+    },
+    {
+      "className" : "u-bg-secondary08",
+      "variable" : "$secondary08",
+      "hexCode" : "#71c5e8"
+    },
+    {
+      "className" : "u-bg-secondary09",
+      "variable" : "$secondary09",
+      "hexCode" : "#87d6f8"
+    },
+    {
+      "className" : "u-bg-secondary10",
+      "variable" : "$secondary10",
+      "hexCode" : "#d0d3d4"
+    }
+  ]
+}
+

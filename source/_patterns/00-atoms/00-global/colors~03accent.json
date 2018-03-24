@@ -1,0 +1,34 @@
+{
+  "colors":[
+    {
+      "className" : "u-bg-accent01",
+      "variable" : "$accent01",
+      "hexCode" : "#5c8216"
+    },
+    {
+      "className" : "u-bg-accent02",
+      "variable" : "$accent02",
+      "hexCode" : "#6f9823"
+    },
+    {
+      "className" : "u-bg-accent03",
+      "variable" : "$primary03",
+      "hexCode" : "#90b82e"
+    },
+    {
+      "className" : "u-bg-accent04",
+      "variable" : "$accent04",
+      "hexCode" : "#c1510a"
+    },
+    {
+      "className" : "u-bg-accent05",
+      "variable" : "$accent05",
+      "hexCode" : "#fa6600"
+    },
+    {
+      "className" : "u-bg-accent06",
+      "variable" : "$accent06",
+      "hexCode" : "#f2a900"
+    }
+  ]
+}

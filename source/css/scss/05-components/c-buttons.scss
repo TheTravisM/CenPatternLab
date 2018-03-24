@@ -1,18 +1,39 @@
 /* --  --------------------  -- */
 /* -- [ COMPONENT : BUTTON ] -- */
 /* --  --------------------  -- */
-
 .c-btn {
-  color: white;
-  background: lightgrey;
-  border: 1px solid darkgrey;
-  padding: 10px 20px;
-  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  padding: .4em 2em;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
 }
 
-/* -- BUTTON : TEXT -- */
+/* -- [ BUTTON : Size variants ] -- */
 
-.c-btn-text {
+  .c-btn--xm { }
+
+  .c-btn--small { padding: .2em 1em; }
+
+  .c-btn--large { padding: .8em 4em; }
+
+  .c-btn--xl { padding: .8em 4em; }
+
+/* BUTTON : Width variants */
+  .c-btn--w100 { width: 100% }
+
+/* -- [ BUTTON : PILL ] -- */
+
+  .c-btn--pill { }
+
+/* -- [ BUTTON : TEXT ] -- */
+
+.c-btn--text {
   color: blue;
   background: none;
   border: none;
@@ -20,27 +41,183 @@
   border-radius: none;
 }
 
-/* -- BUTTON : PILL -- */
+/* -- BUTTON : DEFAULT -- */
 
-/* -- BUTTON : SIZE -- */
+.c-btn--default {
+  color: #90b82e;
+  background-color: #ffffff;
+  border-color: #bfbfbf;
 
-.c-btn-xs { }
+  &:hover {
+    color: #6f9823;
+    background-color: #ffffff;
+    border-color: #bfbfbf;
+  }
 
-.c-btn-sm { }
-
-.c-btn-lg { }
-
-.c-btn-xl { }
-
-/* -- BUTTON : COLOR -- */
-
-.c-btn--green {
- background-color: limegreen;
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: #6f9823;
+    background-color: #dfdfdf;
+    border-color: #bfbfbf;
+  }
 }
 
-/* -- BUTTON : OUTLINE-- */
-.c-btn-outline--green {
-  border-color: limegreen;
+/* -- BUTTON : PRIMARY -- */
+.c-btn--primary {
+  color: #ffffff;
+  background-color: #007db8;
+  border-color: #007db8;
+    &:hover {
+    color: #ffffff;
+    background-color: #2e9cd4;
+    border-color: #2e9cd4;
+  }
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: #ffffff;
+    background-color: #063961;
+    border-color: #063961;
+  }
 }
 
-/* -- Disabled -- */
+/* -- BUTTON : SUCCESS -- */
+.c-btn--success {
+  color: #ffffff;
+  background-color: #90b82e;
+  border-color: #90b82e;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #9bca43;
+    border-color: #9bca43;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active  {
+    color: #ffffff;
+    background-color: #6f9823;
+    border-color: #6f9823;
+  }
+}
+
+/* -- [ BUTTON : INFO ] -- */
+.c-btn--info {
+  color: #ffffff;
+  background-color: #2e9cd4;
+  border-color: #2e9cd4;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #2e9cd4;
+    border-color: #2e9cd4;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active  {
+    color: #ffffff;
+    background-color: #007db8;
+    border-color: #007db8;
+  }
+}
+
+/* -- [ BUTTON : WARNING ] -- */
+.c-btn--warning {
+  color: #ffffff;
+  background-color: #fa6600;
+  border-color: #fa6600;
+  &:hover {
+    color: #ffffff;
+    background-color: #f2981d;
+    border-color: #f2981d;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active  {
+    color: #ffffff;
+    background-color: #c1510a;
+    border-color: #c1510a;
+   }
+}
+
+/* -- [ BUTTON : DANGER ] -- */
+.c-btn--danger {
+  color: #ffffff;
+  background-color: $brand-danger;
+  border-color: $brand-danger;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #ff5858;
+    border-color: #ff5858;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active  {
+    color: #ffffff;
+    background-color: #ef0000;
+    border-color: #ef0000;
+  }
+}
+
+/* -- [ BUTTONS : GHOST ] -- */
+
+.c-btn--default.c-btn--ghost {
+  background-color: transparent;
+  color: #7a7a7a;
+}
+.c-btn--dropdown.c-btn--ghost {
+  background-color: transparent;
+  color: #7a7a7a;
+}
+.c-btn--primary.c-btn--ghost {
+  background-color: transparent;
+  color: #007db8;
+}
+.c-btn--success.c-btn--ghost {
+  background-color: transparent;
+  color: #90b82e;
+}
+.c-btn--info.c-btn--ghost {
+  background-color: transparent;
+  color: #90b82e;
+}
+.c-btn--warning.c-btn--ghost {
+  background-color: transparent;
+  color: #fa6600;
+}
+.c-btn--danger.c-btn--ghost {
+  background-color: transparent;
+  color: #ef0000;
+}
+
+/*-- BUTTON : DISABLED --*/
+.c-btn.disabled,
+.c-btn:disabled,
+.c-btn.disabled:focus,
+.c-btn.disabled.focus,
+.c-btn:disbaled:focus,
+.c-btn:disbaled.focus,
+.c-btn.disabled:hover,
+.c-btn.disabled.hover,
+.c-btn:disbaled:hover,
+.c-btn:disbaled.hover,
+.c-btn.disabled:active,
+.c-btn.disabled.active,
+.c-btn:disbaled:active,
+.c-btn:disbaled.active {
+  color: #3f3f3f !important;
+  background-color: #bfbfbf !important;
+  border-color: #bfbfbf !important;
+}

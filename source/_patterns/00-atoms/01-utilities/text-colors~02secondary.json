@@ -1,52 +1,52 @@
 {
   "colors":[
     {
-      "className" : "u-bg-secondary01",
+      "className" : "u-text-secondary01",
       "variable" : "$secondary01",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-secondary02",
+      "className" : "u-text-secondary02",
       "variable" : "$secondary02",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-secondary03",
+      "className" : "u-text-secondary03",
       "variable" : "$secondary03",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-secondary04",
+      "className" : "u-text-secondary04",
       "variable" : "$secondary04",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-secondary05",
+      "className" : "u-text-secondary05",
       "variable" : "$secondary05",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-secondary06",
+      "className" : "u-text-secondary06",
       "variable" : "$secondary06",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-secondary07",
+      "className" : "u-text-secondary07",
       "variable" : "$secondary07",
       "hexCode" : "#006298 "
     },
     {
-      "className" : "u-bg-secondary08",
+      "className" : "u-text-secondary08",
       "variable" : "$secondary08",
       "hexCode" : "#71c5e8"
     },
     {
-      "className" : "u-bg-secondary09",
+      "className" : "u-text-secondary09",
       "variable" : "$secondary09",
       "hexCode" : "#87d6f8"
     },
     {
-      "className" : "u-bg-secondary10",
+      "className" : "u-text-secondary10",
       "variable" : "$secondary10",
       "hexCode" : "#d0d3d4"
     }

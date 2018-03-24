@@ -1,0 +1,32 @@
+{
+  "alerts" : [
+    {
+      "modifers" : "",
+      "content": "Standard"
+    },
+    {
+      "modifers" : "c-alert--danger",
+      "content": "c-alert--danger"
+    },
+    {
+      "modifers" : "c-alert--info",
+      "content": "c-alert--info"
+    },
+    {
+      "modifers" : "c-alert--success ",
+      "content": "c-alert--success"
+    },
+    {
+      "modifers" : "",
+      "content": "Standard"
+    },
+    {
+      "modifers" : "",
+      "content": "Standard"
+    },
+    {
+      "modifers" : "",
+      "content": "Standard"
+    }
+  ]
+}

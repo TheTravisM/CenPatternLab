@@ -11,42 +11,42 @@
       "tag": "a",
       "link": "https://google.com",
       "text": "Default",
-      "btnStyle" : "c-btn--default",
+      "btnStyle" : "c-btn--default c-btn--ghost",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Primary",
-      "btnStyle" : "c-btn--primary",
+      "btnStyle" : "c-btn--primary c-btn--ghost",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Success",
-      "btnStyle" : "c-btn--success",
+      "btnStyle" : "c-btn--success c-btn--ghost",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Info",
-      "btnStyle" : "c-btn--info",
+      "btnStyle" : "c-btn--info c-btn--ghost",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Warning",
-      "btnStyle" : "c-btn--warning",
+      "btnStyle" : "c-btn--warning c-btn--ghost",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Danger",
-      "btnStyle" : "c-btn--danger",
+      "btnStyle" : "c-btn--danger c-btn--ghost",
       "color" : ""
     }
   ]

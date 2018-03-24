@@ -1,29 +1,29 @@
 {
   "colors":[
     {
-      "className" : "u-bg-primary01",
+      "className" : "u-text-primary01",
       "variable" : "$primary01",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-primary02",
+      "className" : "u-text-primary02",
       "variable" : "$primary02",
       "hexCode" : "#3f3f3f"
     },
     {
-      "className" : "u-bg-primary03",
+      "className" : "u-text-primary03",
       "variable" : "$primary03",
-      "hexCode" : "#3f3f3f"
+      "hexCode" : "#f7f7f7"
     },
     {
-      "className" : "u-bg-primary04",
+      "className" : "u-text-primary04",
       "variable" : "$primary04",
-      "hexCode" : "#3f3f3f"
+      "hexCode" : "#ffffff"
     },
     {
-      "className" : "u-bg-primary05",
+      "className" : "u-text-primary05",
       "variable" : "$primary05",
-      "hexCode" : "#3f3f3f"
+      "hexCode" : "#00263e"
     }
   ]
 }

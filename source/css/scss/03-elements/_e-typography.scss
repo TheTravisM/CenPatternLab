@@ -17,8 +17,8 @@ body {
 	color: $primary01;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
-	font-weight: 400;
-	font-size: 15px;
+	font-weight: $font-regular;
+	font-size: $base-font-size;
 	line-height: 22px;
 }
 
@@ -37,33 +37,33 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 60px;
+	font-size: $h1-font-size;
 	text-transform: uppercase;
 }
 
 h2 {
-	font-size: 50px;
+	font-size: $h2-font-size;
 	text-transform: uppercase;
 }
 
 h3 {
-	font-size: 40px;
+	font-size: $h3-font-size;
 	text-transform: uppercase;
 }
 
 h4 {
-	font-size: 26px;
+	font-size: $h4-font-size;
 	font-weight: 200;
 }
 
 h5 {
-	font-size: 22px;
-	font-weight: 700;
+	font-size: $h5-font-size;
+	font-weight: $font-bold;
 }
 
 h6 {
-	font-size: 18px;
-	font-weight: 700;
+	font-size: $h6-font-size;
+	font-weight: $font-bold;
 }
 
 a {

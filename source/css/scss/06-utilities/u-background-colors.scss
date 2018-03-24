@@ -2,12 +2,14 @@
 /* -- BACKGROUND COLOR -- */
 /* -- ---------------  -- */
 
-/* -- [ Primary BACKGROUND COLORS] -- */
-.u-bg-primary01 { background-color: #3f3f3f !important; }
-.u-bg-primary02 { background-color: #007db8 !important; }
-.u-bg-primary03 { background-color: #f7f7f7 !important; }
+/* -- [ Primary BACKGROUND COLORS ] -- */
+.u-bg-primary01 { background-color: $primary01 !important; }
+.u-bg-primary02 { background-color: $primary02 !important; }
+.u-bg-primary03 { background-color: $primary03 !important; }
+.u-bg-primary04 { background-color: $primary04 !important; }
+.u-bg-primary05 { background-color: $primary05 !important; }
 
-/* -- [ Primary BACKGROUND COLORS] -- */
+/* -- [ SECONDARY BACKGROUND COLORS ] -- */
 .u-bg-secondary01 { background-color: #063961 !important; }
 .u-bg-secondary02 { background-color: #2e9cd4 !important; }
 .u-bg-secondary03 { background-color: #575757 !important; }
@@ -19,7 +21,7 @@
 .u-bg-secondary09 { background-color: #87d6f8 !important; }
 .u-bg-secondary10 { background-color: #d0d3d4 !important; }
 
-/* -- [ Primary BACKGROUND COLORS] -- */
+/* -- [ ACCENT BACKGROUND COLORS ] -- */
 .u-bg-accent01 { background-color: #6f9823 !important; }
 .u-bg-accent02 { background-color: #90b82e !important; }
 .u-bg-accent03 { background-color: #9bca43 !important; }
@@ -27,10 +29,12 @@
 .u-bg-accent05 { background-color: #fa6600 !important; }
 .u-bg-accent06 { background-color: #f2981d !important; }
 
-/* -- [ Primary BACKGROUND COLORS] -- */
+/* -- [ LIMITED BACKGROUND COLORS ] -- */
 .u-bg-limited01 { background-color: #ef0000 !important; }
 .u-bg-limited02 { background-color: #ff5858 !important; }
 .u-bg-limited03 { background-color: #ececec !important; }
+.u-bg-limited04 { background-color: #e0004d !important; }
+.u-bg-limited05 { background-color: #ffc72c !important; }
 
 .u-bg-white { background-color: #fff !important; }
 .u-bg-black { background-color: #000 !important; }

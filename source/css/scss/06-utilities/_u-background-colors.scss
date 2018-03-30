@@ -1,0 +1,45 @@
+/* -- ---------------  -- */
+/* -- BACKGROUND COLOR -- */
+/* -- ---------------  -- */
+
+/* -- Background Colors Examples
+
+.u-bg-primary01 { background-color: #3f3f3f !important; }
+.u-bg-secondary01 { background-color: #003865 !important; }
+.u-bg-accent01 { background-color: #6f9823 !important; }
+
+-- */
+
+/* -- [ Primary BACKGROUND COLORS ] -- */
+@each $key, $value in $primary-colors {
+  .u-bg-#{$key} {
+      background-color: $value !important;
+  }
+}
+
+/* -- [ SECONDARY BACKGROUND COLORS ] -- */
+@each $key, $value in $secondary-colors {
+  .u-bg-#{$key} {
+    background-color: $value !important;
+  }
+}
+
+/* -- [ ACCENT BACKGROUND COLORS ] -- */
+@each $key, $value in $accent-colors {
+  .u-bg-#{$key} {
+    background-color: $value !important;
+  }
+}
+
+/* -- [ LIMITED BACKGROUND COLORS ] -- */
+@each $key, $value in $limited-colors {
+  .u-bg-#{$key} {
+    background-color: $value !important;
+  }
+}
+
+.u-bg-white { background-color: #fff !important; }
+.u-bg-black { background-color: #000 !important; }
+
+.u-bg-findATutor { background-color: #297DBB !important; }
+.u-bg-dynaConFooterCopy { background-color: #262626 !important; }

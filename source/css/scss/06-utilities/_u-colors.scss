@@ -1,0 +1,62 @@
+/* Utility : Color */
+
+/* -- --------------  -- */
+/* -- [ TEXT COLORS ]  -- */
+/* -- --------------  -- */
+
+/* -- Text Colors Examples
+
+.u-text-primary01 { color: #3f3f3f !important; }
+.u-text-secondary01 { color: #003865 !important; }
+.u-text-accent01 { color: #6f9823 !important; }
+
+-- */
+
+/* -- [ Primary Text Colors ] -- */
+
+@each $key, $value in $primary-colors {
+  .u-text-#{$key} {
+      color: $value !important;
+  }
+}
+
+/* -- [ Secondary Text Colors ] -- */
+
+@each $key, $value in $secondary-colors {
+  .u-text-#{$key} {
+      color: $value !important;
+  }
+}
+
+/* -- [ Accent Text Colors ] -- */
+@each $key, $value in $accent-colors {
+  .u-text-#{$key} {
+      color: $value !important;
+  }
+}
+
+/* -- [ Accent Text Colors ] -- */
+@each $key, $value in $limited-colors {
+  .u-text-#{$key} {
+      color: $value !important;
+  }
+}
+
+.u-text-white { color: #fff !important; }
+.u-text-black { color: #000 !important; }
+
+.u-text-findATutor { color: #297DBB !important; }
+.u-text-dynaConFooterCopy { color: #262626 !important; }
+
+// - [ context-specific variables  COLORS ] -- //
+.u-text-brand-primary { color:  $primary02; }
+.u-text-brand-success { color: $accent02; }
+.u-text-brand-info { color: $secondary02; }
+.u-text-brand-warning { color: $accent05; }
+.u-text-brand-danger { color: $limited01; }
+.u-text-text-color { color: $primary01; }
+.u-text-link-color { color: $primary02; }
+.u-text-headings-color { color: $primary02; }
+.u-text-component-active-bg { color: $primary03; }
+.u-text-code-color { color:$primary01; }
+.u-text-code-bg { color:$secondary06; }

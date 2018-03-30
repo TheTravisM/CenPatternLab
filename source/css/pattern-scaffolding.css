@@ -70,8 +70,12 @@
 .pl-text-color {
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
 }
+
 .pl-text-color div {
-  min-width: 350px;
+  /* min-width: 350px; */
   margin: 0 2rem 2rem 0;
 }

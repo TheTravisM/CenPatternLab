@@ -29,7 +29,9 @@
 
 /* -- [ BUTTON : PILL ] -- */
 
-  .c-btn--pill { }
+  .c-btn--pill {
+    border-radius: 200px;
+  }
 
 /* -- [ BUTTON : TEXT ] -- */
 
@@ -174,10 +176,6 @@
 /* -- [ BUTTONS : GHOST ] -- */
 
 .c-btn--default.c-btn--ghost {
-  background-color: transparent;
-  color: #7a7a7a;
-}
-.c-btn--dropdown.c-btn--ghost {
   background-color: transparent;
   color: #7a7a7a;
 }

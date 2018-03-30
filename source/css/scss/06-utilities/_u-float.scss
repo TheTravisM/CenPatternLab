@@ -1,61 +1,61 @@
 /* Utility FLOAT */
 
-.float-left {
+.u-float-left {
   float: left !important;
 }
 
-.float-right {
+.u-float-right {
   float: right !important;
 }
 
-.float-none {
+.u-float-none {
   float: none !important;
 }
 
 @media (min-width: 576px) {
-  .float-sm-left {
+  .u-float-sm-left {
     float: left !important;
   }
-  .float-sm-right {
+  .u-float-sm-right {
     float: right !important;
   }
-  .float-sm-none {
+  .u-float-sm-none {
     float: none !important;
   }
 }
 
 @media (min-width: 768px) {
-  .float-md-left {
+  .u-float-md-left {
     float: left !important;
   }
-  .float-md-right {
+  .u-float-md-right {
     float: right !important;
   }
-  .float-md-none {
+  .u-float-md-none {
     float: none !important;
   }
 }
 
 @media (min-width: 992px) {
-  .float-lg-left {
+  .u-float-lg-left {
     float: left !important;
   }
-  .float-lg-right {
+  .u-float-lg-right {
     float: right !important;
   }
-  .float-lg-none {
+  .u-float-lg-none {
     float: none !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .float-xl-left {
+  .u-float-xl-left {
     float: left !important;
   }
-  .float-xl-right {
+  .u-float-xl-right {
     float: right !important;
   }
-  .float-xl-none {
+  .u-float-xl-none {
     float: none !important;
   }
 }

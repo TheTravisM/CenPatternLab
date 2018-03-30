@@ -4,49 +4,49 @@
       "tag": "a",
       "link": "https://google.com",
       "text": "Standard",
-      "btnStyle" : "c-btn--text",
+      "btnStyle" : "c-btn--pill",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Default",
-      "btnStyle" : "c-btn--default c-btn--text",
+      "btnStyle" : "c-btn--default c-btn--pill",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Primary",
-      "btnStyle" : "c-btn--primary c-btn--text",
+      "btnStyle" : "c-btn--primary c-btn--pill",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Success",
-      "btnStyle" : "c-btn--success c-btn--text",
+      "btnStyle" : "c-btn--success c-btn--pill",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Info",
-      "btnStyle" : "c-btn--info c-btn--text",
+      "btnStyle" : "c-btn--info c-btn--pill",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Warning",
-      "btnStyle" : "c-btn--warning c-btn--text",
+      "btnStyle" : "c-btn--warning c-btn--pill",
       "color" : ""
     },
     {
       "tag": "a",
       "link": "https://google.com",
       "text": "Danger",
-      "btnStyle" : "c-btn--danger c-btn--text",
+      "btnStyle" : "c-btn--danger c-btn--pill",
       "color" : ""
     }
   ]

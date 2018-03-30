@@ -5,20 +5,20 @@
 
 
 // SETTINGS: Global variables, config switches */
-@import 'scss/00-settings/_00-settings';
+@import 'scss/00-settings/00-settings';
 
 // TOOLS: Default mixin and functions */
-@import 'scss/01-tools/_00-tools';
+@import 'scss/01-tools/00-tools';
 
 // GENERIC: Ground-zero styles (normalize, resets, box-sizing) */
-@import 'scss/02-generic/_00-generic';
+@import 'scss/02-generic/00-generic';
 
 // ELEMENTS: Unclassed HTML elements (Type selectors) */
-@import 'scss/03-elements/_00-elements';
+@import 'scss/03-elements/00-elements';
 
 // OBJECTS: Cosmetic-free design patterns
 // o-: Signify that something is an Object, and that it may be used in any number of unrelated contexts to the one you can currently see it in. Making modifications to these types of class could potentially have knock-on effects in a lot of other unrelated places. Tread carefully.*/
-@import 'scss/04-objects/04-objects';
+@import 'scss/04-objects/00-objects';
 
 // COMPONENTS: Designed components
 // c-: Signify that something is a Component. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you’re currently looking at. Modifying these styles should be safe and have no side effects. */

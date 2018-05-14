@@ -219,3 +219,14 @@
   background-color: #bfbfbf !important;
   border-color: #bfbfbf !important;
 }
+
+/* -- Secure Ceckout -- */
+
+.c-btn--secure-checkout {
+  color: #fff;
+  background-color: $accent05;
+  border-color: $accent05;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: $spacing-md;
+}

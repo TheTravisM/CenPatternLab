@@ -1,5 +1,5 @@
 /* ==========================================================================
-   #SPACINGS
+   #UTILITIES : SPACINGS
    ========================================================================== */
 
 /**
@@ -15,57 +15,55 @@
  *   .u-padding-vertical-small {}
  */
 
-
-
-$spacing-breakpoints: (
-    null: 0px,    // Extra small sreen / phone         -- From    0px and up
-  "--sm":  576px, // Small screen / phone              -- From  576px and up
-  "--md":  768px, // Medium screen / tablet            -- From  768px and up
-  "--lg":  992px, // Large screen / desktop            -- From  992px and up
-  "--xl": 1200px  // Extra large screen / wide desktop -- From 1200px and up
+ $u-spacing-breakpoints: (
+    null :  $breakpoint-xs, // Extra small sreen / phone         -- From    0px and up
+  "--sm" :  $breakpoint-sm, // Small screen / phone              -- From  576px and up
+  "--md" :  $breakpoint-md, // Medium screen / tablet            -- From  768px and up
+  "--lg" :  $breakpoint-lg, // Large screen / desktop            -- From  992px and up
+  "--xl" :  $breakpoint-xl  // Extra large screen / wide desktop -- From 1200px and up
 ) !default;
 
-$spacing-directions: (
-  null: null,
-  "t": "-top",
-  "r": "-right",
-  "b": "-bottom",
-  "l": "-left",
-  "h": "-left" "-right", // h stands for horizontal Left and Right
-  "v": "-top" "-bottom", // V stands for vertical Top and Bottom
+$u-spacing-directions: (
+  null : null,
+   "t" : "-top",
+   "r" : "-right",
+   "b" : "-bottom",
+   "l" : "-left",
+   "h" : "-left" "-right", // h stands for horizontal Left and Right
+   "v" : "-top" "-bottom", // V stands for vertical Top and Bottom
 ) !default;
 
-$spacing-properties: (
-  "p": "padding",
-  "m": "margin",
+$u-spacing-properties: (
+  "p" : "padding",
+  "m" : "margin",
 ) !default;
 
-$u-spacing-sizes: (
-    "-0": $spacing-0,     // 0px
-  "-xxs": $spacing-xxs,    // 2px
-   "-xs": $spacing-xs,    // 4px
-   "-sm": $spacing-sm,    // 8px
-   null:  $spacing-md,    // 16px
-   "-lg": $spacing-lg,    // 24px
-   "-xl": $spacing-xl,    // 32px
-  "-xxl": $spacing-xxl    // 40px
+$u-spacing: (
+   "-0" :  $spacing-0,   //  0px
+ "-xxs" :  $spacing-xxs, //  2px
+  "-xs" :  $spacing-xs,  //  4px
+  "-sm" :  $spacing-sm,  //  8px
+  "-md" :  $spacing-md,  // 16px
+  "-lg" :  $spacing-lg,  // 24px
+  "-xl" :  $spacing-xl,  // 32px
+ "-xxl" :  $spacing-xxl  // 40px
+) !default;
 
-  ) !default;
 
-@each $breakpoint, $property in $spacing-breakpoints {
+@each $breakpoint-key, $breakpoint-value in $u-spacing-breakpoints {
 
-  @media (min-width: #{$property}) {
+  @media (min-width: #{$breakpoint-value}) {
 
-    @each $property-namespace, $property in $spacing-properties {
+    @each $property-namespace, $property in $u-spacing-properties {
 
-      @each $direction-namespace, $direction-rules in $spacing-directions {
+      @each $direction-namespace, $direction-rules in $u-spacing-directions {
 
-        @each $size-namespace, $size in $u-spacing-sizes {
+        @each $spacing-key, $spacing-value in $u-spacing {
 
-          .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}#{$breakpoint} {
+          .u-#{$property-namespace}#{$direction-namespace}#{$spacing-key}#{$breakpoint-key} {
 
             @each $direction in $direction-rules {
-              #{$property}#{$direction}: $size !important;
+              #{$property}#{$direction}: $spacing-value !important;
             }
           }
         }

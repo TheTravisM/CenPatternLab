@@ -1,0 +1,43 @@
+/* -- --------------------  -- */
+/* -- [ UTILITIES : ORDER ] -- */
+/* -- --------------------  -- */
+
+/**
+ * Utility classes to put specific spacing values onto elements. The below loop
+ * will generate us a suite of classes like:
+ *
+  order first : .u-order-first { order: -1 !important; }
+  order last  :.u-order-last { order: 13 !important; }
+  order 1     :.u-order-1 { order: 1 !important; }
+  order 1 small device and up .u-order-1--sm { order: -1 !important; }
+
+*/
+
+
+$u-order-breakpoints: (
+  null :  $breakpoint-xs, // Extra small sreen / phone         -- From    0px and up
+"--sm" :  $breakpoint-sm, // Small screen / phone              -- From  576px and up
+"--md" :  $breakpoint-md, // Medium screen / tablet            -- From  768px and up
+"--lg" :  $breakpoint-lg, // Large screen / desktop            -- From  992px and up
+"--xl" :  $breakpoint-xl  // Extra large screen / wide desktop -- From 1200px and up
+) !default;
+
+$u-order-max-number : 12;
+
+
+@each $breakpoint-key, $breakpoint-value in $u-order-breakpoints {
+
+  @media (min-width: #{$breakpoint-value}) {
+
+    .u-order-first#{$breakpoint-key} { order: -1 !important; }
+
+    .u-order-last#{$breakpoint-key} { order: $u-order-max-number + 1 !important; }
+
+    @for $i from 1 through $u-order-max-number {
+
+      .u-order-#{$i}#{$breakpoint-key} {
+        order: #{$i} !important;
+      }
+    }
+  }
+}

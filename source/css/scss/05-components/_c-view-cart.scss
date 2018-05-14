@@ -1,0 +1,20 @@
+/* -- VIEW CART -- */
+
+.c-view-cart {
+
+}
+
+.c-view-cart .c-view-cart__your-cart {
+
+}
+
+.c-view-cart .c-view-cart__summary {
+  // 240px button
+  width: 300px;
+}
+
+.c-view-cart__summary .container {
+  border: 1px solid $secondary05;
+  border-radius: 4px;
+  padding: $spacing-lg;
+}

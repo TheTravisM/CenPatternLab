@@ -14,12 +14,12 @@ $spacing-xl  : $base-spacing * 4; // 32px
 $spacing-xxl : $base-spacing * 5; // 40px
 
 $spacing: (
-   0:  $spacing-0,   //  0px
- xxs:  $spacing-xxs, //  2px
-  xs:  $spacing-xs,  //  4px
-  sm:  $spacing-sm,  //  8px
-  md:  $spacing-md,  // 16px
-  lg:  $spacing-lg,  // 24px
-  xl:  $spacing-xl,  // 32px
- xxl:  $spacing-xxl  // 40px
+   0 :  $spacing-0,   //  0px
+ xxs :  $spacing-xxs, //  2px
+  xs :  $spacing-xs,  //  4px
+  sm :  $spacing-sm,  //  8px
+  md :  $spacing-md,  // 16px
+  lg :  $spacing-lg,  // 24px
+  xl :  $spacing-xl,  // 32px
+ xxl :  $spacing-xxl  // 40px
 ) !default;

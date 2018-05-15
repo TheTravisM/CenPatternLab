@@ -1,10 +1,72 @@
-{{! <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 mt-5">
+<h1>My Rentals</h1>
+
+<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 mt-5">
    <!-- -------------- -->
    <!-- [ MY RENTALS ] -->
    <!-- -------------- -->
 
    <div class="row content-center">
       <div class="col-md-12">
+
+        <div class="o-card">
+
+          <div class="o-card__header u-justify-content-between">
+            <!-- Purchase Date -->
+            <div>
+              <strong>Purchase date:</strong> 1/13/18
+            </div>
+                  <!-- Order number -->
+            <div>
+               <strong>Order number:</strong> #402987
+            </div>
+          </div><!-- ./o-card__header -->
+
+          <div class="o-card__body">
+
+
+               <div class="d-flex flex-column flex-sm-row mb-3">
+                  <div class="mr-3">
+                     <span style="color:#e0004d">INSTANT ACCESS</span>
+                  </div>
+                  <div>
+                     Your access expires on
+                     <strong>5/13/18</strong>
+                  </div>
+               </div>
+               <div class="d-flex flex-wrap flex-column flex-md-row">
+                  <div>
+                     <img class="mr-3 mb-3" src="https://www.fillmurray.com/200/50">
+                  </div>
+                  <div class="mr-3">
+                     <span>
+                        <strong class="d-inline">Cengage Unlimited Single-Term Access</strong>
+                        <span class="d-inline">| (4 months)</span>
+                     </span>
+                     <ul class="small list-unstyled">
+                        <li>2019 Digital Access</li>
+                        <li>Campbell/Campbell</li>
+                        <li>
+                           <span class="isbn-10 d-inline">ISBN 10: 1234565434</span>|
+                           <span class="isbn-13 d-inline">ISBN 13: 8492750333100</span>
+                        </li>
+                        <li>C 2019 | Hardcover</li>
+                     </ul>
+                  </div>
+                  <div class="ml-md-auto">
+                     <strong>$119.00</strong>
+                  </div>
+               </div>
+
+
+
+
+
+
+          </div> <!-- ./o-card__body -->
+
+          <div class="o-card__footer"></div> <!-- ./o-card__footer -->
+        </div> <!-- ./o-card -->
+
          <div class="panel panel-default">
             <div class="panel-heading">
                <div class="d-flex d-flex flex-column flex-sm-row justify-content-between">
@@ -34,8 +96,8 @@
                   </div>
                   <div class="mr-3">
                      <span>
-        <strong class="d-inline">Cengage Unlimited Single-Term Access</strong>
-        <span class="d-inline">| (4 months)</span>
+                        <strong class="d-inline">Cengage Unlimited Single-Term Access</strong>
+                        <span class="d-inline">| (4 months)</span>
                      </span>
                      <ul class="small list-unstyled">
                         <li>2019 Digital Access</li>
@@ -138,7 +200,7 @@
 <!-- ----------------------- -->
 <!-- [ Return Rental Modal ] -->
 <!-- ----------------------- -->
-<div id="js-return-rental-modal" class="modal fade js-return-rental-modal" tabindex="-1" role="dialog">
+<div style="display:none !important" class="c-modal fade js-return-rental-modal" tabindex="-1" role="dialog">
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
@@ -187,7 +249,7 @@
 <!-- --------------- -->
 <!-- [ Exten Modal ] -->
 <!-- --------------- -->
-<div class="modal fade js-extend-rental-modal" tabindex="-1" role="dialog">
+<div style="display:none" class="c-modal fade js-extend-rental-modal" tabindex="-1" role="dialog">
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
@@ -277,7 +339,7 @@
 <!-- --------------------- -->
 <!-- [ Print Label Modal ] -->
 <!-- --------------------- -->
-<div class="modal fade js-print-label-modal" tabindex="-1" role="dialog">
+<div style="display:none" class="c-modal fade js-print-label-modal" tabindex="-1" role="dialog">
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
@@ -362,7 +424,7 @@
 <!-- ----------------------- -->
 <!-- [ Cancel Rental Modal ] -->
 <!-- --------------------- -->
-<div class="modal fade js-cancel-rental-modal" tabindex="-1" role="dialog">
+<div style="display:none" class="c-modal fade js-cancel-rental-modal" tabindex="-1" role="dialog">
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
@@ -505,4 +567,4 @@
          </div>
       </div><!-- /.modal-content -->
    </div><!-- /.modal-dialog -->
-</div><!-- /.modal --> }}
+</div><!-- /.modal -->

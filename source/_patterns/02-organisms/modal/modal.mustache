@@ -1,0 +1,29 @@
+
+<button class="c-btn c-btn--primary " data-toggle="modal" data-target=".example-Modal">modal</button>
+
+{{#modal}}
+  <div class="c-modal o-fade example-Modal {{{modal-modifer-class}}}" role="dialog" aria-hidden="true" style="display:none;">
+
+    <div class="c-modal__background"></div>
+
+    <div class="c-modal__content" role="document">
+
+      <div class="c-modal__header">
+        <h4 class="c-modal__title">{{{header}}}</h4>
+        <button class="c-modal__btn-close" type="button" data-dismiss="modal" ria-label="Close">&times;</button>
+      </div>
+
+      <div class="c-modal__body">
+        {{{body}}}
+      </div>
+
+      <div class="c-modal__footer">
+        {{{footer}}}
+
+        <button type="button" class="c-btn c-btn--primary">Save changes</button>
+        <button type="button" class="c-btn c-btn--secondary" data-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+
+  </div>
+{{/modal}}

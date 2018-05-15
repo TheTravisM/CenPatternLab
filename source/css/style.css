@@ -24,18 +24,20 @@ $box-shadow: 0 1px 1px rgba($header-color-dark, .3);
 */
 /* -- Border Colors -- */
 /* -- Border Radius -- */
-/*------------------------------------*    SETTINGS : BREAKPOINTS
+/*------------------------------------*\
+    SETTINGS : BREAKPOINTS
 \*------------------------------------*/
 /* -- ---------------------------- -- */
 /* -- [ UTILITIES : BASE SPACING ] -- */
 /* -- ---------------------------- -- */
-/*------------------------------------*    #TYPOGRAPHY
+/*------------------------------------*\
+    #TYPOGRAPHY
 \*------------------------------------*/
 /* -- [ TYPOGRAPHY : OPEN SANS ] -- */
 @font-face {
   font-family: 'Open Sans Regular';
-  src: url("../fonts/open-sans/OpenSans-Regular.eot");
-  src: url("../fonts/open-sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  src: url("./fonts/open-sans/OpenSans-Regular.eot");
+  src: url("./fonts/open-sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
@@ -57,8 +59,10 @@ $box-shadow: 0 1px 1px rgba($header-color-dark, .3);
 /* -- [ TYPOGRAPHY : FONT ] -- */
 /* -- [ TYPOGRAPHY : FONT WEIGHT ] -- */
 /* -- [ TYPOGRAPHY : FONT SIZE ] -- */
-/*------------------------------------*/* -- TOOLS--- -----------------------*/
-/*------------------------------------*
+/*------------------------------------*\
+/* -- TOOLS--- -----------------------*/
+/*------------------------------------*\
+
 /* tools: Site-wide mixins and functions.
 
  * TOOLS
@@ -68,6 +72,9 @@ $box-shadow: 0 1px 1px rgba($header-color-dark, .3);
  * Sass MQ..............inuitcss’ default media query manager.
 
 */
+/*------------------------------------*\
+    #FLEXBOX w/ BROWSER FALLBACKS
+\*------------------------------------*/
 /* generic: Low-specificity, far-reaching rulesets (e.g. resets)
 
  * GENERIC
@@ -75,7 +82,8 @@ $box-shadow: 0 1px 1px rgba($header-color-dark, .3);
  * Normalize.css........A level playing field using @necolas’ Normalize.css.
  * Reset................A tiny reset to complement Normalize.css.
  * Shared...............Sensibly and tersely share some global commonalities
- *                      (particularly useful when managing vertical rhythm).
+ *                      (particularly useful when managing vertical rhythm).\
+
 */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -520,8 +528,10 @@ fieldset {
   /* [1] */
   border: 0; }
 
-/*------------------------------------*/* -- ELEMENTS -----------------------*/
-/*------------------------------------*
+/*------------------------------------*\
+/* -- ELEMENTS -----------------------*/
+/*------------------------------------*\
+
 /*
   Elements: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
 
@@ -1245,6 +1255,58 @@ html {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+/* --  - - - - - - - -  -- */
+/* -- [ OBJECT : CARD ] -- */
+/* --  - - - - - - - -  -- */
+.o-card {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: vertical;
+  -moz-flex-direction: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px; }
+  .o-card__img--top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px); }
+  .o-card__header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  .o-card__body {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem; }
+  .o-card__footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+
 /* COMPONENTS */
 /* --  --------------------  -- */
 /* -- [ COMPONENT : BUTTON ] -- */
@@ -1484,6 +1546,91 @@ html {
     color: #fff;
     background-color: #6f9823;
     border-color: #6f9823; }
+
+/* --  - - - - - - - - - -  -- */
+/* -- [ COMPONENT : MODAL ] -- */
+/* --  - - - - - - - - - -  -- */
+.c-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000; }
+  .c-modal--small .c-modal__content {
+    max-width: 300px; }
+  .c-modal--large .c-modal__content {
+    max-width: 900px; }
+  .c-modal__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3); }
+  .c-modal__content {
+    align-content: flex-start;
+    background: #FFF;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 0;
+    margin: 40px auto;
+    max-width: 600px;
+    position: fixed;
+    left: 50% !important;
+    top: 40% !important;
+    transform: translate(-50%, -50%); }
+  .c-modal__header {
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    padding: 1rem; }
+  .c-modal__title {
+    color: #0085ca;
+    line-height: 1;
+    font-size: 28px;
+    flex-grow: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .c-modal__btn-close {
+    align-self: flex-start;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: 0;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    color: #7a7a7a;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: -1rem;
+    margin-right: -1rem;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    speak: none; }
+    .c-modal__btn-close:hover {
+      color: #575757; }
+  .c-modal__body {
+    padding: 20px; }
+  .c-modal__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dfdfdf; }
+    .c-modal__footer > :not(:last-child) {
+      margin-right: 0.5rem; }
 
 /* -- VIEW CART -- */
 .c-view-cart .c-view-cart__summary {

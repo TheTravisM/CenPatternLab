@@ -5,9 +5,9 @@
 /* -- [ TYPOGRAPHY : OPEN SANS ] -- */
 @font-face {
 	font-family: 'Open Sans Regular';
-	src: url('../fonts/open-sans/OpenSans-Regular.eot');
-	src: url('../fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-		   url('../fonts/open-sans/OpenSans-Regular.ttf')        format('truetype');
+	src: url('./fonts/open-sans/OpenSans-Regular.eot');
+	src: url('./fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		   url('./fonts/open-sans/OpenSans-Regular.ttf')        format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }

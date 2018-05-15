@@ -1,0 +1,174 @@
+/*------------------------------------*\
+    #FLEXBOX w/ BROWSER FALLBACKS
+\*------------------------------------*/
+
+
+
+// Flexbox Containers
+//
+// The 'flex' value causes an element to generate a block-level flex
+// container box.
+//
+// The 'inline-flex' value causes an element to generate a inline-level
+// flex container box.
+//
+// display: flex | inline-flex
+//
+// http://w3.org/tr/css3-flexbox/#flex-containers
+//
+// (Placeholder selectors for each type, for those who rather @extend)
+@mixin t-flexbox {
+  display: -webkit-box; // old
+  display: -moz-box; // old
+  display: -ms-flexbox; // ie
+  display: -webkit-flex; // new
+  display: flex; // new
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Direction
+//
+// The 'flex-direction' property specifies how flex items are placed in
+// the flex container, by setting the direction of the flex container's
+// main axis. This determines the direction that flex items are laid out in.
+//
+// Values: row | row-reverse | column | column-reverse
+// Default: row
+//
+// http://w3.org/tr/css3-flexbox/#flex-direction-property
+
+@mixin t-flex-direction($direction) {
+  @if $direction == column {
+    -webkit-flex-direction: vertical;
+       -moz-flex-direction: vertical;
+        -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+  @else {
+    -webkit-flex-direction: horizontal;
+       -moz-flex-direction: horizontal;
+        -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@mixin t-flex-flow($values) {
+  -webkit-flex-flow: $values;
+     -moz-flex-flow: $values;
+      -ms-flex-flow: $values;
+          flex-flow: $values;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Wrap
+//
+// The 'flex-wrap' property controls whether the flex container is single-line
+// or multi-line, and the direction of the cross-axis, which determines
+// the direction new lines are stacked in.
+//
+// Values: nowrap | wrap | wrap-reverse
+// Default: nowrap
+//
+// http://w3.org/tr/css3-flexbox/#flex-wrap-property
+
+@mixin t-flex-wrap($wrap) {
+  @if $wrap == wrap {
+    flex-wrap: wrap;
+  }
+  @else {
+    flex-wrap: nowrap;
+  }
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox "Flex" (shorthand)
+//
+// The 'flex' property specifies the components of a flexible length: the
+// flex grow factor and flex shrink factor, and the flex basis. When an
+// element is a flex item, 'flex' is consulted instead of the main size
+// property to determine the main size of the element. If an element is
+// not a flex item, 'flex' has no effect.
+//
+// Values: none | <flex-grow> <flex-shrink> || <flex-basis>
+// Default: See individual properties (1 1 0).
+//
+// http://w3.org/tr/css3-flexbox/#flex-property
+// The 'flex' shorthand - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin t-flex($values) {
+  -webkit-box-flex: $values;
+     -moz-box-flex: $values;
+      -webkit-flex: $values;
+      	  -ms-flex: $values;
+  	          flex: $values;
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Justify Content
+//
+// The 'justify-content' property aligns flex items along the main axis
+// of the current line of the flex container. This is done after any flexible
+// lengths and any auto margins have been resolved. Typically it helps distribute
+// extra free space leftover when either all the flex items on a line are
+// inflexible, or are flexible but have reached their maximum size. It also
+// exerts some control over the alignment of items when they overflow the line.
+//
+// Note: 'space-*' values not supported in older syntaxes.
+//
+// Values: flex-start | flex-end | center | space-between | space-around
+// Default: flex-start
+//
+// http://w3.org/tr/css3-flexbox/#justify-content-property
+
+@mixin t-justify-content($value) {
+
+  @if $value == "start" {
+    justify-content: flex-start;
+  } @else if $value == "end" {
+      justify-content: flex-end;
+  } @else if $value == "between" {
+      justify-content: space-between;
+  } @else if $value == "around" {
+      justify-content: space-around;
+  } @else if $value == "center" {
+      justify-content: center;
+  }
+}
+
+//----------------------------------------------------------------------
+
+// Flexbox Align Items
+//
+// Flex items can be aligned in the cross axis of the current line of the
+// flex container, similar to 'justify-content' but in the perpendicular
+// direction. 'align-items' sets the default alignment for all of the flex
+// container's items, including anonymous flex items. 'align-self' allows
+// this default alignment to be overridden for individual flex items. (For
+// anonymous flex items, 'align-self' always matches the value of 'align-items'
+// on their associated flex container.)
+//
+// Values: flex-start | flex-end | center | baseline | stretch
+// Default: stretch
+//
+// http://w3.org/tr/css3-flexbox/#align-items-property
+
+@mixin t-align-items($value) {
+
+  @if $value == "start" {
+    align-items: flex-start;
+  } @else if $value == "end" {
+    align-items: flex-end;
+  } @else if $value == "center" {
+    align-items: center;
+  } @else if $value == "baseline" {
+    align-items: baseline;
+  } @else if $value == "stretch" {
+    align-items: stretch;
+  }
+}

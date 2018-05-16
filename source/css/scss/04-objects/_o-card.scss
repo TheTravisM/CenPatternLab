@@ -30,6 +30,8 @@
     border-bottom: 1px solid rgba(0,0,0,.125);
   }
 
+  &__title { }
+
   &__body {
     @include t-flex(1 1 auto);
     padding: 1.25rem;
@@ -38,9 +40,5 @@
   &__footer {
     @include t-flexbox;
   }
-
-  &__title { }
-
-
 
 }

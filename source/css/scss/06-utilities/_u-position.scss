@@ -22,7 +22,7 @@ $positions: static, relative, absolute, fixed, sticky;
   top: 0;
   right: 0;
   left: 0;
-  z-index: $zindex-fixed;
+  z-index: $s-zindex-fixed;
 }
 
 .u-fixed-bottom {
@@ -30,13 +30,13 @@ $positions: static, relative, absolute, fixed, sticky;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $zindex-fixed;
+  z-index: $s-zindex-fixed;
 }
 
 .u-sticky-top {
   @supports (position: sticky) {
     position: sticky;
     top: 0;
-    z-index: $zindex-sticky;
+    z-index: $s-zindex-sticky;
   }
 }

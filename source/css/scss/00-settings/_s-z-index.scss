@@ -1,0 +1,16 @@
+/* -- ---------------------  -- */
+/* -- [ Settings : Z-Index ] -- */
+/* -- ---------------------  -- */
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$s-zindex-dropdown:                   1000 !default;
+$s-zindex-sticky:                     1020 !default;
+$s-zindex-fixed:                      1030 !default;
+$s-zindex-modal-backdrop:             1040 !default;
+$s-zindex-modal:                      1050 !default;
+$s-zindex-popover:                    1060 !default;
+$s-zindex-tooltip:                    1070 !default;

@@ -17,7 +17,7 @@ $positions: static, relative, absolute, fixed, sticky;
 
 // Shorthand
 
-.u-fixed-top {
+.u-position-fixed--top {
   position: fixed;
   top: 0;
   right: 0;
@@ -25,12 +25,24 @@ $positions: static, relative, absolute, fixed, sticky;
   z-index: $s-zindex-fixed;
 }
 
-.u-fixed-bottom {
+.u-position-fixed--bottom {
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: $s-zindex-fixed;
+}
+
+.u-position-sticky--top {
+  position: sticky;
+  top: 0;
+  z-index: $s-zindex-sticky;
+}
+
+.u-position-sticky--bottom {
+  position: sticky;
+  bottom: 0;
+  z-index: $s-zindex-sticky;
 }
 
 .u-sticky-top {

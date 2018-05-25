@@ -55,13 +55,6 @@
   }
 }
 
-@mixin t-flex-flow($values) {
-  -webkit-flex-flow: $values;
-     -moz-flex-flow: $values;
-      -ms-flex-flow: $values;
-          flex-flow: $values;
-}
-
 //----------------------------------------------------------------------
 
 // Flexbox Wrap
@@ -82,6 +75,20 @@
   @else {
     flex-wrap: nowrap;
   }
+}
+
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+
+@mixin t-flex-flow($values) {
+  -webkit-flex-flow: $values;
+     -moz-flex-flow: $values;
+      -ms-flex-flow: $values;
+          flex-flow: $values;
 }
 
 //----------------------------------------------------------------------
@@ -171,4 +178,12 @@
   } @else if $value == "stretch" {
     align-items: stretch;
   }
+}
+
+@mixin t-order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
 }

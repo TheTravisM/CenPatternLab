@@ -1,5 +1,8 @@
-<ul>
-  {{#list}}
-      <li>{{{item}}}</li>
-  {{/list}}
-</ul>
+{{#lists}}
+  <ul class="{{{list-class}}} {{{list-class-modifers}}}">
+    {{#items}}
+       <li class="{{{list-item-class}}}">{{{item}}}</li>
+    {{/items}}
+  </ul>
+{{/lists}}
+

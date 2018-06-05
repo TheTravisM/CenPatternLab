@@ -1,0 +1,111 @@
+/* ==========================================================================
+   #UTILITIES : TEXT
+   ========================================================================== */
+
+/**
+ * Utility classes to put specific spacing values onto elements. The below loop
+ * will generate us a suite of classes like:
+ *
+ *   margin top = .u-mt { margin-top: 8px !important  }
+ *   padding left large = .u-pl-lg { padding-left: 16px !important }
+ *   .u-text-left {}
+ *   .u-text-center {}
+ *   .u-text-right {}
+ *   .u-text-lowercase {}
+ *   .u-text-uppercase {}
+ *   .u-text-capitalize {}
+ *   @media (min-width: 576px) {
+ *   .u-text-left--sm   { text-align: left !important;   }
+ *   .u-text-right--sm  { text-align: right !important;  }
+ *   .u-text-center--sm { text-align: center !important; }
+ *   .u-text-lowercase--sm  { text-transform: lowercase !important;  }
+ *   .u-text-uppercase--sm  { text-transform: uppercase !important;  }
+ *   .u-text-capitalize--sm { text-transform: capitalize !important; }
+ *   .u-font-weight-bold { font-weight: 700!important; }
+ *   .u-font-weight-normal { font-weight: 400!important;}
+ *   .u-font-weight-light { font-weight: 300!important; }
+ *   .u-font-italic { font-style: italic!important; }
+ */
+
+.u-font-serif { font-family: 'Cordale', serif !important; }
+
+.u-font-italic { font-style: italic !important; }
+
+/* -- [ TYPOGRAPHY : FONT WEIGHT ] -- */
+
+.u-font-light      { font-weight: $font-light !important;    }
+.u-font-regular   { font-weight: $font-regular !important;   }
+.u-font-semi-bold { font-weight: $font-semi-bold !important; }
+.u-font-bold      { font-weight: $font-bold !important;      }
+
+$u-text-breakpoints: (
+  null :  $breakpoint-xs, // Extra small sreen / phone         -- From    0px and up
+"--sm" :  $breakpoint-sm, // Small screen / phone              -- From  576px and up
+"--md" :  $breakpoint-md, // Medium screen / tablet            -- From  768px and up
+"--lg" :  $breakpoint-lg, // Large screen / desktop            -- From  992px and up
+"--xl" :  $breakpoint-xl  // Extra large screen / wide desktop -- From 1200px and up
+) !default;
+
+@each $breakpoint-key, $breakpoint-value in $u-text-breakpoints {
+  @media (min-width: #{$breakpoint-value}) {
+    /* -- Text Align -- */
+    .u-text-left#{$breakpoint-key}       { text-align: left !important;   }
+    .u-text-right#{$breakpoint-key}      { text-align: right !important;  }
+    .u-text-center#{$breakpoint-key}     { text-align: center !important; }
+    /* -- Text Transform -- */
+    .u-text-lowercase#{$breakpoint-key}  { text-transform: lowercase !important;  }
+    .u-text-uppercase#{$breakpoint-key}  { text-transform: uppercase !important;  }
+    .u-text-capitalize#{$breakpoint-key} { text-transform: capitalize !important; }
+  }
+}
+
+// @media (min-width: 0) {
+//   /* -- Text Align -- */
+//   .u-text-left { text-align: left !important; }
+//   .u-text-right { text-align: right !important; }
+//   .u-text-center { text-align: center !important; }
+//   /* -- Text Transform -- */
+//   .u-text-lowercase { text-transform: lowercase !important; }
+//   .u-text-uppercase { text-transform: uppercase !important; }
+//   .u-text-capitalize { text-transform: capitalize !important; }
+// }
+// @media (min-width: 576px) {
+//   /* -- Text Align -- */
+//   .u-text-left--sm   { text-align: left !important;   }
+//   .u-text-right--sm  { text-align: right !important;  }
+//   .u-text-center--sm { text-align: center !important; }
+//   /* -- Text Transform -- */
+//   .u-text-lowercase--sm  { text-transform: lowercase !important;  }
+//   .u-text-uppercase--sm  { text-transform: uppercase !important;  }
+//   .u-text-capitalize--sm { text-transform: capitalize !important; }
+// }
+// @media (min-width: 768px) {
+//   /* -- Text Align -- */
+//   .u-text-left--md   { text-align: left !important;   }
+//   .u-text-right--md  { text-align: right !important;  }
+//   .u-text-center--md { text-align: center !important; }
+//   /* -- Text Transform -- */
+//   .u-text-lowercase--md  { text-transform: lowercase !important; }
+//   .u-text-uppercase--md  { text-transform: uppercase !important; }
+//   .u-text-capitalize--md { text-transform: capitalize !important; }
+// }
+// @media (min-width: 992px) {
+//   /* -- Text Align -- */
+//   .u-text-left--lg   { text-align: left !important;   }
+//   .u-text-right--lg  { text-align: right !important;  }
+//   .u-text-center--lg { text-align: center !important; }
+//   /* -- Text Transform -- */
+//   .u-text-lowercase--lg  { text-transform: lowercase !important;  }
+//   .u-text-uppercase--lg  { text-transform: uppercase !important;  }
+//   .u-text-capitalize--lg { text-transform: capitalize !important; }
+// }
+// @media (min-width: 1200px) {
+//   /* -- Text Align -- */
+//   .u-text-left--xl   { text-align: left !important; }
+//   .u-text-right--xl  { text-align: right !important; }
+//   .u-text-center--xl { text-align: center !important; }
+//   /* -- Text Transform -- */
+//   .u-text-lowercase--xl  { text-transform: lowercase !important; }
+//   .u-text-uppercase--xl  { text-transform: uppercase !important; }
+//   .u-text-capitalize--xl { text-transform: capitalize !important; }
+// }

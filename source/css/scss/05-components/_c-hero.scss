@@ -1,0 +1,62 @@
+/* --  - - -  - - - - - -  -- */
+/* -- [ COMPONENT : HERO ] -- */
+/* --  - - -  - - - - - -  -- */
+
+.c-hero {
+  @include t-flexbox;
+  @include t-flex-direction(column);
+  @include t-justify-content(start);
+  @include t-align-items(center);
+  position: relative;
+  max-height: 550px;
+  background: gray bottom center no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+
+  &__title {
+    margin: 100px auto 30px
+  }
+
+  &__content { }
+
+  &__picture--bottom {
+    display: flex;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__img--logo {
+    min-width: 240px;
+    max-width: 280px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__img--bottom {  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: $breakpoint-sm ) {
+  .c-hero {
+    max-height: 630px;
+
+    &__title {
+      margin: 140px auto 30px
+    }
+    &__img {
+      //max-height: 300px;
+    }
+    &__img--logo {
+      min-width: 280px;
+      max-width: 300px;
+    }
+    &__img--bottom {
+
+    }
+  }
+}

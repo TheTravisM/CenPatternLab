@@ -1,0 +1,13 @@
+{
+  "heros": [
+    {
+      "c-hero-modifer-classes": "c-hero-class",
+      "c-hero__background-img-url": "https://usatcollege.files.wordpress.com/2014/09/139786707.jpg" ,
+      "c-hero__title": "Learn anything, anytime, anywhere",
+      "c-hero-img-logo-url": "../../../images/CengageUnlimited_LogoBlack.svg",
+      "c-hero__img-src": "../../../images/cenage-landing-people.png",
+      "c-hero-img-modifer-class": "c-hero__img--bottom",
+      "c-hero__content": ""
+    }
+  ]
+}

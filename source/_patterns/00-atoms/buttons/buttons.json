@@ -3,13 +3,6 @@
     {
       "tag": "a",
       "link": "https://google.com",
-      "text": "Standard",
-      "btnStyle" : "",
-      "color" : ""
-    },
-    {
-      "tag": "a",
-      "link": "https://google.com",
       "text": "Default",
       "btnStyle" : "c-btn--default",
       "color" : ""
@@ -17,8 +10,22 @@
     {
       "tag": "a",
       "link": "https://google.com",
+      "text": "Standard",
+      "btnStyle" : "",
+      "color" : ""
+    },
+    {
+      "tag": "a",
+      "link": "https://google.com",
       "text": "Primary",
       "btnStyle" : "c-btn--primary",
+      "color" : ""
+    },
+    {
+      "tag": "a",
+      "link": "https://google.com",
+      "text": "Dark",
+      "btnStyle" : "c-btn--dark",
       "color" : ""
     },
     {

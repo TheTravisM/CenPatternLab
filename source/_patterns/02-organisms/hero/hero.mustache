@@ -1,0 +1,18 @@
+
+
+{{#heros}}
+  <div class="c-hero {{c-hero-modifer-class}}" style="background-image:url('{{{c-hero__background-img-url}}}');">
+
+    <h1 class="c-hero__title">{{{c-hero__title}}}</h1>
+
+    <p class="c-hero__content">{{{c-hero__content}}}</p>
+
+    <picture class="c-hero__picture">
+      <img class="c-hero__img c-hero__img--logo" src="{{{c-hero-img-logo-url}}}">
+    </picture>
+
+    <picture class="c-hero__picture c-hero__picture--bottom">
+      <img class="c-hero__img {{c-hero-img-modifer-class}}" src="{{{c-hero__img-src}}}">
+    </picture>
+  </div>
+{{/heros}}

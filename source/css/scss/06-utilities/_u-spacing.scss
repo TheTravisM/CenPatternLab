@@ -25,17 +25,17 @@
 
 $u-spacing-directions: (
   null : null,
-   "t" : "-top",
-   "r" : "-right",
-   "b" : "-bottom",
-   "l" : "-left",
-   "h" : "-left" "-right", // h stands for horizontal Left and Right
-   "v" : "-top" "-bottom", // V stands for vertical Top and Bottom
+  "-top"        : "-top",
+  "-right"      : "-right",
+  "-bottom"     : "-bottom",
+  "-left"       : "-left",
+  "-horizontal" : "-left" "-right", // h stands for horizontal Left and Right
+  "-vertical"    : "-top" "-bottom", // V stands for vertical Top and Bottom
 ) !default;
 
 $u-spacing-properties: (
-  "p" : "padding",
-  "m" : "margin",
+  "padding" : "padding",
+  "margin"  : "margin",
 ) !default;
 
 $u-spacing: (

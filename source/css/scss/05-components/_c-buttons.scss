@@ -1,7 +1,13 @@
 /* --  --------------------  -- */
 /* -- [ COMPONENT : BUTTON ] -- */
 /* --  --------------------  -- */
+
 .c-btn {
+  background-color: $white;
+  border-radius: 4px;
+  border: 1px solid $secondary05;
+
+  color: $primary01;
   display: inline-block;
   vertical-align: middle;
   font: inherit;
@@ -10,27 +16,39 @@
   margin: 0;
   cursor: pointer;
   padding: .4em 2em;
-  border-radius: 4px;
-  border: 1px solid #bfbfbf;
+
+  &:hover {
+    background-color: $primary03;
+    border-color: $secondary04;
+    color: $secondary03;
+  }
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: $primary05;
+    background-color: $secondary06;
+    border-color: $secondary05;
+  }
 }
 
 /* -- [ BUTTON : Size variants ] -- */
 
-  .c-btn--xm { }
+.c-btn--xm { }
 
-  .c-btn--small { padding: .2em 1em; }
+.c-btn--small { padding: .2em 1em; }
 
-  .c-btn--large { padding: .8em 4em; }
+.c-btn--large { padding: .8em 4em; }
 
-  .c-btn--xl { padding: .8em 4em; }
+.c-btn--xl { padding: .8em 4em; }
 
 /* BUTTON : Width variants */
-  .c-btn--w100 { width: 100% }
+.c-btn--w100 { width: 100% }
 
 /* -- [ BUTTON : PILL ] -- */
-  .c-btn--pill {
-    border-radius: 200px;
-  }
+.c-btn--pill {
+  border-radius: 200px;
+}
 
 /* -- [ BUTTON : TEXT ] -- */
 
@@ -45,14 +63,14 @@
 /* -- BUTTON : DEFAULT -- */
 
 .c-btn--default {
-  color: #90b82e;
+  color: $accent03;
   background-color: $white;
-  border-color: #bfbfbf;
+  border-color: $secondary05;
 
   &:hover {
     color: #6f9823;
     background-color: $white;
-    border-color: #bfbfbf;
+    border-color: $secondary05;
   }
 
   &:focus,
@@ -61,7 +79,7 @@
   &.active {
     color: #6f9823;
     background-color: #dfdfdf;
-    border-color: #bfbfbf;
+    border-color: $secondary05;
   }
 }
 
@@ -85,7 +103,7 @@
   }
 }
 
-/* -- BUTTON : PRIMARY -- */
+/* -- BUTTON : DARK -- */
 .c-btn--dark {
   color: $white;
   background-color: $primary01;
@@ -197,7 +215,6 @@
 .c-btn--ghost {
   background-color: transparent;
 }
-
 .c-btn--default.c-btn--ghost {
   color: #7a7a7a;
 }
@@ -241,18 +258,28 @@
 .c-btn.disabled.active,
 .c-btn:disbaled:active,
 .c-btn:disbaled.active {
-  color: #3f3f3f !important;
-  background-color: #bfbfbf !important;
-  border-color: #bfbfbf !important;
+  color: $primary01 !important;
+  background-color: $secondary05 !important;
+  border-color: $secondary05 !important;
 }
 
 /* -- [ BUTTONS : Text Buttons ] -- */
 
 .c-btn--default.c-btn--text {
-  color: #7a7a7a;
+  color: $secondary04;
 }
 .c-btn--primary.c-btn--text {
   color: #007db8;
+}
+.c-btn--dark.c-btn--text {
+  color: $primary01;
+  &:hover { color: $secondary03; }
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: $primary05;
+  }
 }
 .c-btn--success.c-btn--text {
   color: #90b82e;
@@ -266,8 +293,6 @@
 .c-btn--danger.c-btn--text {
   color: #ef0000;
 }
-
-
 
 /* -- Secure Ceckout -- */
 

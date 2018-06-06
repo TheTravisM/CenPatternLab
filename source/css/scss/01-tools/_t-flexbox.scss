@@ -25,6 +25,12 @@
   display: flex; // new
 }
 
+@mixin t-flexbox-inline {
+  display: -ms-inline-flexbox; // ie
+  display: -webkit-inline-box; // new
+  display: inline-flex; // new
+}
+
 //----------------------------------------------------------------------
 
 // Flexbox Direction

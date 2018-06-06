@@ -1,0 +1,46 @@
+/* --  - - - - - -  - - - - - - -  -- */
+/* -- [ COMPONENT : BUTTON-GROUP ] -- */
+/* --  - - - - - -  - - - - - - -  -- */
+
+.c-btn-group {
+  @include t-flexbox;
+  vertical-align: middle;
+  position: relative;
+
+  .c-btn {
+    border-radius: 0;
+    margin-right: -1px;
+    flex-grow: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &:first-of-type { border-radius: 4px 0 0 4px; }
+    &:last-of-type  { border-radius: 0 4px 4px 0; }
+  }
+
+  input:checked + label.c-btn {
+    background-color: $secondary06;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);
+    font-weight: $font-semi-bold;
+  }
+
+}
+
+/* -- Radio Buttons -- */
+.c-btn-group--radio {
+
+  input { display: none; }
+
+  input+label.c-btn {
+    position: relative;
+  }
+
+  input:checked + label.c-btn { }
+
+}
+
+/* -- Buttons Pills-- */
+.c-btn-group--pill {
+  .c-btn { }
+  .c-btn:first-of-type { border-radius: 200px 0 0 200px; }
+  .c-btn:last-of-type  { border-radius: 0 200px 200px 0; }
+}

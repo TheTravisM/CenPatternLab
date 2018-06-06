@@ -1,0 +1,55 @@
+/* --  - - - - - - - - - - - - -  -- */
+/* -- [ COMPONENT : Add To Cart ] -- */
+/* --  - - - - - - - - - - - - -  -- */
+
+.c-add-to-cart {
+  @include t-flexbox;
+  @include t-justify-content(center);
+  @include t-flex-direction(column);
+  @include t-flex-wrap(wrap);
+  margin: 60px auto;
+
+  &__title {
+    margin-bottom: 48px;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  &__container {
+    @include t-flexbox;
+    @include t-justify-content(center);
+    @include t-flex-wrap(wrap);
+    max-width: 100;
+    padding: 0 20px;
+    margin: auto;
+  }
+
+  &__col-left {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin-bottom: 32px;
+  }
+  &__col-right {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 750px ) {
+  .c-add-to-cart {
+    margin-top: 90px;
+
+    &__container {
+      justify-content: space-between;
+      max-width: 840px;
+    }
+    &__col-left {
+      max-width: 400px;
+    }
+    &__col-right {
+      max-width: 300px;
+    }
+  }
+}

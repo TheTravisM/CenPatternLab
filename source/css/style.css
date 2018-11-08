@@ -2423,6 +2423,7 @@ span.incorrect {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important; }
 
+/* -- Flex -- */
 @media (min-width: 576px) {
   .u-flex-sm-row {
     -webkit-box-orient: horizontal !important;
@@ -2892,6 +2893,50 @@ span.incorrect {
     float: none !important; } }
 
 /* -- --------------------  -- */
+/* -- [ UTILITIES : FONT ] -- */
+/* -- --------------------  -- */
+/*
+  - font-family √
+  - font-size
+  - font-style √
+  - font-variant
+  - font-weight √
+
+*/
+/* -- [ FONT : Font Family ] --*/
+.u-font-serif {
+  font-family: 'Cordale', serif !important; }
+
+.u-font-serif {
+  font-family: 'Cordale', serif !important; }
+
+.u-font-serif {
+  font-family: 'Cordale', serif !important; }
+
+/* -- [ FONT : Font Style ] --*/
+.u-font-normal {
+  font-style: normal !important; }
+
+.u-font-italic {
+  font-style: italic !important; }
+
+.u-font-oblique {
+  font-style: oblique !important; }
+
+/* -- [ FONT : FONT WEIGHT ] -- */
+.u-font-light {
+  font-weight: 100 !important; }
+
+.u-font-regular {
+  font-weight: 400 !important; }
+
+.u-font-semi-bold {
+  font-weight: 600 !important; }
+
+.u-font-bold {
+  font-weight: 700 !important; }
+
+/* -- --------------------  -- */
 /* -- [ UTILITIES : ORDER ] -- */
 /* -- --------------------  -- */
 /**
@@ -3103,6 +3148,7 @@ span.incorrect {
     z-index: 1020; } }
 
 /* Utility SIZING */
+/* -- Width -- */
 .u-width-25 {
   width: 25% !important; }
 
@@ -3115,6 +3161,7 @@ span.incorrect {
 .u-width-100 {
   width: 100% !important; }
 
+/* -- Height -- */
 .u-height-25 {
   height: 25% !important; }
 
@@ -4432,9 +4479,20 @@ span.incorrect {
     margin-top: 2.5rem !important;
     margin-bottom: 2.5rem !important; } }
 
-/* ==========================================================================
-   #UTILITIES : TEXT
-   ========================================================================== */
+/* -- --------------------  -- */
+/* -- [ UTILITIES : TEXT ] -- */
+/* -- --------------------  -- */
+/*
+  - Test Align √
+  - Text Decoration
+  - Text Transform √
+  - Text Indent ?
+  - Letter Spacing ?
+  - Line Height ?
+  - Text-Shadow ?
+  - word-spacing ?
+  -
+*/
 /**
  * Utility classes to put specific spacing values onto elements. The below loop
  * will generate us a suite of classes like:
@@ -4459,34 +4517,15 @@ span.incorrect {
  *   .u-font-weight-light { font-weight: 300!important; }
  *   .u-font-italic { font-style: italic!important; }
  */
-.u-font-serif {
-  font-family: 'Cordale', serif !important; }
-
-.u-font-italic {
-  font-style: italic !important; }
-
-/* -- [ TYPOGRAPHY : FONT WEIGHT ] -- */
-.u-font-light {
-  font-weight: 100 !important; }
-
-.u-font-regular {
-  font-weight: 400 !important; }
-
-.u-font-semi-bold {
-  font-weight: 600 !important; }
-
-.u-font-bold {
-  font-weight: 700 !important; }
-
 @media (min-width: 0) {
-  /* -- Text Align -- */
+  /* -- [ Text Align ] -- */
   .u-text-left {
     text-align: left !important; }
   .u-text-right {
     text-align: right !important; }
   .u-text-center {
     text-align: center !important; }
-  /* -- Text Transform -- */
+  /* -- [ Text Transform ] -- */
   .u-text-lowercase {
     text-transform: lowercase !important; }
   .u-text-uppercase {
@@ -4495,14 +4534,14 @@ span.incorrect {
     text-transform: capitalize !important; } }
 
 @media (min-width: 576px) {
-  /* -- Text Align -- */
+  /* -- [ Text Align ] -- */
   .u-text-left--sm {
     text-align: left !important; }
   .u-text-right--sm {
     text-align: right !important; }
   .u-text-center--sm {
     text-align: center !important; }
-  /* -- Text Transform -- */
+  /* -- [ Text Transform ] -- */
   .u-text-lowercase--sm {
     text-transform: lowercase !important; }
   .u-text-uppercase--sm {
@@ -4511,14 +4550,14 @@ span.incorrect {
     text-transform: capitalize !important; } }
 
 @media (min-width: 768px) {
-  /* -- Text Align -- */
+  /* -- [ Text Align ] -- */
   .u-text-left--md {
     text-align: left !important; }
   .u-text-right--md {
     text-align: right !important; }
   .u-text-center--md {
     text-align: center !important; }
-  /* -- Text Transform -- */
+  /* -- [ Text Transform ] -- */
   .u-text-lowercase--md {
     text-transform: lowercase !important; }
   .u-text-uppercase--md {
@@ -4527,14 +4566,14 @@ span.incorrect {
     text-transform: capitalize !important; } }
 
 @media (min-width: 992px) {
-  /* -- Text Align -- */
+  /* -- [ Text Align ] -- */
   .u-text-left--lg {
     text-align: left !important; }
   .u-text-right--lg {
     text-align: right !important; }
   .u-text-center--lg {
     text-align: center !important; }
-  /* -- Text Transform -- */
+  /* -- [ Text Transform ] -- */
   .u-text-lowercase--lg {
     text-transform: lowercase !important; }
   .u-text-uppercase--lg {
@@ -4543,14 +4582,14 @@ span.incorrect {
     text-transform: capitalize !important; } }
 
 @media (min-width: 1200px) {
-  /* -- Text Align -- */
+  /* -- [ Text Align ] -- */
   .u-text-left--xl {
     text-align: left !important; }
   .u-text-right--xl {
     text-align: right !important; }
   .u-text-center--xl {
     text-align: center !important; }
-  /* -- Text Transform -- */
+  /* -- [ Text Transform ] -- */
   .u-text-lowercase--xl {
     text-transform: lowercase !important; }
   .u-text-uppercase--xl {

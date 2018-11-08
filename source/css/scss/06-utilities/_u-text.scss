@@ -1,6 +1,19 @@
-/* ==========================================================================
-   #UTILITIES : TEXT
-   ========================================================================== */
+/* -- --------------------  -- */
+/* -- [ UTILITIES : TEXT ] -- */
+/* -- --------------------  -- */
+
+/*
+  - Test Align √
+  - Text Decoration
+  - Text Transform √
+  - Text Indent ?
+  - Letter Spacing ?
+  - Line Height ?
+  - Text-Shadow ?
+  - word-spacing ?
+  -
+*/
+
 
 /**
  * Utility classes to put specific spacing values onto elements. The below loop
@@ -27,17 +40,6 @@
  *   .u-font-italic { font-style: italic!important; }
  */
 
-.u-font-serif { font-family: 'Cordale', serif !important; }
-
-.u-font-italic { font-style: italic !important; }
-
-/* -- [ TYPOGRAPHY : FONT WEIGHT ] -- */
-
-.u-font-light      { font-weight: $font-light !important;    }
-.u-font-regular   { font-weight: $font-regular !important;   }
-.u-font-semi-bold { font-weight: $font-semi-bold !important; }
-.u-font-bold      { font-weight: $font-bold !important;      }
-
 $u-text-breakpoints: (
   null :  $breakpoint-xs, // Extra small sreen / phone         -- From    0px and up
 "--sm" :  $breakpoint-sm, // Small screen / phone              -- From  576px and up
@@ -48,11 +50,11 @@ $u-text-breakpoints: (
 
 @each $breakpoint-key, $breakpoint-value in $u-text-breakpoints {
   @media (min-width: #{$breakpoint-value}) {
-    /* -- Text Align -- */
+    /* -- [ Text Align ] -- */
     .u-text-left#{$breakpoint-key}       { text-align: left !important;   }
     .u-text-right#{$breakpoint-key}      { text-align: right !important;  }
     .u-text-center#{$breakpoint-key}     { text-align: center !important; }
-    /* -- Text Transform -- */
+    /* -- [ Text Transform ] -- */
     .u-text-lowercase#{$breakpoint-key}  { text-transform: lowercase !important;  }
     .u-text-uppercase#{$breakpoint-key}  { text-transform: uppercase !important;  }
     .u-text-capitalize#{$breakpoint-key} { text-transform: capitalize !important; }

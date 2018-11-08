@@ -1,0 +1,31 @@
+/* -- --------------------  -- */
+/* -- [ UTILITIES : FONT ] -- */
+/* -- --------------------  -- */
+
+/*
+  - font-family √
+  - font-size
+  - font-style √
+  - font-variant
+  - font-weight √
+
+*/
+
+/* -- [ FONT : Font Family ] --*/
+
+.u-font-serif { font-family: 'Cordale', serif !important; }
+.u-font-serif { font-family: 'Cordale', serif !important; }
+.u-font-serif { font-family: 'Cordale', serif !important; }
+
+/* -- [ FONT : Font Style ] --*/
+
+.u-font-normal { font-style: normal !important; }
+.u-font-italic { font-style: italic !important; }
+.u-font-oblique{ font-style: oblique !important; }
+
+/* -- [ FONT : FONT WEIGHT ] -- */
+
+.u-font-light      { font-weight: $font-light !important;    }
+.u-font-regular   { font-weight: $font-regular !important;   }
+.u-font-semi-bold { font-weight: $font-semi-bold !important; }
+.u-font-bold      { font-weight: $font-bold !important;      }

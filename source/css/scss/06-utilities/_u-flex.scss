@@ -76,7 +76,7 @@
   justify-content: space-around !important;
 }
 
-// -- Align -- //
+// -- Align Items -- //
 
 .u-align-items-start {
   -webkit-box-align: start !important;
@@ -108,6 +108,8 @@
   align-items: stretch !important;
 }
 
+// -- Align Content -- //
+
 .u-align-content-start {
   -ms-flex-line-pack: start !important;
   align-content: flex-start !important;
@@ -138,6 +140,8 @@
   align-content: stretch !important;
 }
 
+// -- Align Self -- //
+
 .u-align-self-auto {
   -ms-flex-item-align: auto !important;
   align-self: auto !important;
@@ -167,6 +171,8 @@
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important;
 }
+
+/* -- Flex -- */
 
 @media (min-width: 576px) {
   .u-flex-sm-row {

@@ -35,6 +35,11 @@ gulp.task('sass', function(){
   gulp.src('./source/css/*.scss')
     .pipe(sass().on('error',sass.logError))
     .pipe(gulp.dest('./source/css'));
+
+    // Modular Static
+    gulp.src('./source/css/modular-css/**/*.scss')
+    .pipe(sass().on('error',sass.logError))
+    .pipe(gulp.dest('./source/css/modular-css'));
 });
 
 gulp.task('sass:watch',function(){

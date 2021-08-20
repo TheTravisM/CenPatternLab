@@ -9,7 +9,7 @@
 //   @include inuit-clearfix();
 // }
 
-@mixin clearfix() {
+@mixin t-clearfix() {
 
   &:after {
     content: "" !important;

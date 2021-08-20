@@ -15,13 +15,13 @@
     border: 1px solid rgba(0,0,0,.125);
     border-radius: $s-border-radius-sm;
 
-  &__img--top {
+  &_img--top {
       width: 100%;
       border-top-left-radius: calc(.25rem - 1px);
       border-top-right-radius: calc(.25rem - 1px);
   }
 
-  &__header {
+  &_header {
     @include t-flexbox;
     position: relative;
     padding: .75rem 1.25rem;
@@ -30,14 +30,14 @@
     border-bottom: 1px solid rgba(0,0,0,.125);
   }
 
-  &__title { }
+  &_title { }
 
-  &__body {
+  &_body {
     @include t-flex(1 1 auto);
     padding: 1.25rem;
   }
 
-  &__footer {
+  &_footer {
     @include t-flexbox;
   }
 

@@ -13,55 +13,50 @@
 // `font-size` with a pixel fallback, as well as generating a `line-height` that
 // will sit on our baseline grid.
 
+:root {
+  font-size: $base-font-size;
+}
+
 body {
 	color: $primary01;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: $font-regular;
 	font-size: $base-font-size;
-	line-height: 22px;
+	line-height: $base-line-height;
 }
 
 .serif {
 	font-family: 'Cordale', serif;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
   padding: 0;
   font-weight: $font-regular;
   line-height: 1.1;
 }
 
-h1, h2, h3,
-.h1, .h2, .h3 {
-  //text-transform: uppercase;
+h1, h2, h3 { //text-transform: uppercase;
 }
 
-h1, .h1 {
-	font-size: $h1-font-size;
-}
+h1 { font-size: $h1-font-size; }
 
-h2, .h2 {
-	font-size: $h2-font-size;
-}
+h2 { font-size: $h2-font-size; }
 
-h3, .h3 {
-	font-size: $h3-font-size;
-}
+h3 { font-size: $h3-font-size; }
 
-h4, .h4 {
+h4 {
 	font-size: $h4-font-size;
 	font-weight: 200;
 }
 
-h5, .h5 {
+h5 {
 	font-size: $h5-font-size;
 	font-weight: $font-bold;
 }
 
-h6, .h6 {
+h6 {
 	font-size: $h6-font-size;
 	font-weight: $font-bold;
 }

@@ -2,8 +2,6 @@
     #FLEXBOX w/ BROWSER FALLBACKS
 \*------------------------------------*/
 
-
-
 // Flexbox Containers
 //
 // The 'flex' value causes an element to generate a block-level flex
@@ -83,12 +81,12 @@
   }
 }
 
-  /* Then we define the flow direction
-     and if we allow the items to wrap
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
+/* Then we define the flow direction
+    and if we allow the items to wrap
+  * Remember this is the same as:
+  * flex-direction: row;
+  * flex-wrap: wrap;
+*/
 
 @mixin t-flex-flow($values) {
   -webkit-flex-flow: $values;

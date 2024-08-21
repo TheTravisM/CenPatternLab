@@ -1,0 +1,44 @@
+/* --  - - - - - - - -  -- */
+/* -- [ OBJECT : CARD ] -- */
+/* --  - - - - - - - -  -- */
+
+.o-card {
+    position: relative;
+    @include t-flexbox;
+    @include t-flex-direction(column);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: $s-border-radius-sm;
+
+  &_img--top {
+      width: 100%;
+      border-top-left-radius: calc(.25rem - 1px);
+      border-top-right-radius: calc(.25rem - 1px);
+  }
+
+  &_header {
+    @include t-flexbox;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+
+  &_title { }
+
+  &_body {
+    @include t-flex(1 1 auto);
+    padding: 1.25rem;
+  }
+
+  &_footer {
+    @include t-flexbox;
+  }
+
+}

@@ -1,0 +1,73 @@
+/* -- --------------------  -- */
+/* -- [ UTILITIES : FONT ] -- */
+/* -- --------------------  -- */
+
+/*
+  - font-family √
+  - font-size
+  - font-style √
+  - font-variant
+  - font-weight √
+*/
+
+/* -- [ FONT : Font Family ] --*/
+
+.u-font-serif { font-family: 'Cordale', serif !important; }
+.u-font-serif { font-family: 'Cordale', serif !important; }
+.u-font-serif { font-family: 'Cordale', serif !important; }
+
+/* -- [ FONT : Font Style ] --*/
+
+.u-font-normal  { font-style: normal !important;  }
+.u-font-italic  { font-style: italic !important;  }
+.u-font-oblique { font-style: oblique !important; }
+
+/* -- [ FONT : FONT WEIGHT ] -- */
+
+.u-font-light     { font-weight: $font-light     !important; }
+.u-font-regular   { font-weight: $font-regular   !important; }
+.u-font-semi-bold { font-weight: $font-semi-bold !important; }
+.u-font-bold      { font-weight: $font-bold      !important; }
+
+/* -- [ FONT : HEADER ] -- */
+
+.u-h1 { font-size: $h1-font-size; }
+
+.u-h2 { font-size: $h2-font-size; }
+
+.u-h3 { font-size: $h3-font-size; }
+
+.u-h4 {
+	font-size: $h4-font-size;
+	font-weight: 200;
+}
+
+.u-h5 {
+	font-size: $h5-font-size;
+	font-weight: $font-bold;
+}
+
+.u-h6 {
+	font-size: $h6-font-size;
+	font-weight: $font-bold;
+}
+
+.u-p { font-size: $base-font-size; } // 16px
+
+/* -- [ FONT : FONT SIZE ] -- */
+
+.u-font-xxs  { font-size: $font-size-xxs  !important; }	// 8px
+.u-font-xs   { font-size: $font-size-xs   !important; }	// 10px
+.u-font-sm   { font-size: $font-size-sm   !important; }	// 12px
+.u-font-md   { font-size: $font-size-md   !important; }	// 14px
+.u-font-base { font-size: $font-size-base !important; }	// 16px
+.u-font-lg   { font-size: $font-size-lg   !important; }	// 24px
+.u-font-xl   { font-size: $font-size-xl   !important; }	// 32px
+.u-font-xxl  { font-size: $font-size-xxl  !important; }	// 48px
+
+/* -- [ FONT : DISPLAY ] -- */
+
+.u-display-1 { font-size: $display-1 !important; }	// 96px - 6rem
+.u-display-2 { font-size: $display-2 !important; }	// 72px - 4.5rem
+.u-display-3 { font-size: $display-3 !important; }	// 60px - 3.75rem
+.u-display-4 { font-size: $display-4 !important; }	// 56px - 3.5

@@ -1,0 +1,32 @@
+/* ==========================================================================
+   OBJECTS : MEDIA
+   ========================================================================== */
+
+/**
+ *  Place any image- and text-like content side-by-side, as per:
+ *  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ *  https://css-tricks.com/media-object-bunch-ways/
+ */
+
+ .o-media {
+  @include flexbox;
+  @include align-items(start);
+  background: #333;
+  padding: 1rem;
+  max-width: 20rem;
+  margin: 0 0 1rem 0;
+ }
+
+ .o-media__img {
+  width: 75px;
+  margin: 0 1rem 0 0;
+ }
+
+ .o-media__body {
+  flex: 1;
+ }
+
+ .o-media__header {
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}

@@ -1,0 +1,54 @@
+/* -- -----------------------  -- */
+/* -- [ UTILITIES : Position ] -- */
+/* -- -----------------------  -- */
+
+
+// stylelint-disable declaration-no-important
+
+// Common values
+
+// Sass list not in variables since it's not intended for customization.
+// stylelint-disable-next-line scss/dollar-variable-default
+$positions: static, relative, absolute, fixed, sticky;
+
+@each $position in $positions {
+  .u-position-#{$position} { position: $position !important; }
+}
+
+// Shorthand
+
+.u-position-fixed--top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $s-zindex-fixed;
+}
+
+.u-position-fixed--bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $s-zindex-fixed;
+}
+
+.u-position-sticky--top {
+  position: sticky;
+  top: 0;
+  z-index: $s-zindex-sticky;
+}
+
+.u-position-sticky--bottom {
+  position: sticky;
+  bottom: 0;
+  z-index: $s-zindex-sticky;
+}
+
+.u-sticky-top {
+  @supports (position: sticky) {
+    position: sticky;
+    top: 0;
+    z-index: $s-zindex-sticky;
+  }
+}

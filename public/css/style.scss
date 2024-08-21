@@ -1,0 +1,33 @@
+// Namespace (o-, c-, u-, t-, _-, js-, qa-) Reference : http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
+// BEMIT: http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further
+// BEM: http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403
+// ITCSS: https://www.youtube.com/watch?v=1OKZOV-iLj4
+
+
+// SETTINGS: Global variables, config switches */
+@import 'scss/00-settings/00-settings';
+
+// TOOLS: Default mixin and functions */
+@import 'scss/01-tools/00-tools';
+
+// GENERIC: Ground-zero styles (normalize, resets, box-sizing) */
+@import 'scss/02-generic/00-generic';
+
+// ELEMENTS: Unclassed HTML elements (Type selectors) */
+@import 'scss/03-elements/00-elements';
+
+// OBJECTS: Cosmetic-free design patterns
+// o-: Signify that something is an Object, and that it may be used in any number of unrelated contexts to the one you can currently see it in. Making modifications to these types of class could potentially have knock-on effects in a lot of other unrelated places. Tread carefully.*/
+@import 'scss/04-objects/00-objects';
+
+// COMPONENTS: Designed components
+// c-: Signify that something is a Component. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you’re currently looking at. Modifying these styles should be safe and have no side effects. */
+@import 'scss/05-components/00-components';
+
+// UTILITIES / TRUMPS: Helpers and overrides
+// u-: Signify that this class is a Utility class. It has a very specific role (often providing only one declaration) and should not be bound onto or changed. It can be reused and is not tied to any specific piece of UI. You will probably recognise this namespace from libraries and methodologies like SUIT. */
+@import 'scss/06-utilities/00-utilities';
+
+// THEMES
+// t-: Signify that a class is responsible for adding a Theme to a view. It lets us know that UI Components’ current cosmetic appearance may be due to the presence of a theme.
+@import 'scss/07-themes/00-themes';

@@ -1,0 +1,80 @@
+/* --  - - - - - - - - - -  -- */
+/* -- [ COMPONENT : ALERTS ] -- */
+/* --  - - - - - - - - - -  -- */
+
+.c-alert {
+  align-content: flex-start;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #FFF;
+  display: flex;
+  padding: 5px 5px 5px 10px;
+  margin-bottom: 10px;
+}
+
+.c-alert a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.c-alert__content {
+  flex-grow: 2;
+  font-size: 12px;
+}
+
+.c-alert__close {
+  align-self: flex-start;
+  background: transparent;
+  border: 0;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* -- [ ALERT : COLORS ] -- */
+
+.c-alert--danger {
+  background-color: $brand-danger;
+  border-color: #d60024;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: $limited02; // #ff5858
+    border-color: $limited02; // #ff5858
+  }
+  &:focus,
+  &.focus,
+  &:active,
+  &.active  {
+    color: #fff;
+    background-color: $limited01; // #ef0000;
+    border-color: $limited01; // #ef0000;
+  }
+}
+
+.c-alert--info {
+  background-color: $secondary02; // #00a9e0;
+  border-color: $secondary02; // #00a9e0;
+  color: #fff;
+}
+
+.c-alert--success {
+  color: #fff;
+  background-color: $accent03; // #90b82e;
+  border-color: $accent03; // #90b82e;
+  &:hover {
+    color: #fff;
+    background-color: #9bca43;
+    border-color: #9bca43;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active  {
+    color: #fff;
+    background-color: $accent02; // #6f9823;
+    border-color: $accent02; // #6f9823;
+  }
+}

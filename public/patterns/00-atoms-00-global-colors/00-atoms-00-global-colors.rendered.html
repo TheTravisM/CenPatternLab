@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1724267739658" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1724267739658" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1724267739658" media="all">
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="">
+    
+<ul class="sg-colors">
+      <li>
+        <span class="sg-swatch u-bg-primary01"></span>
+        <span class="sg-label">
+          class: u-bg-primary01<br />
+          variable: $primary01<br />
+          hex code: #3f3f3f
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-primary02"></span>
+        <span class="sg-label">
+          class: u-bg-primary02<br />
+          variable: $primary02<br />
+          hex code: #3f3f3f
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-primary03"></span>
+        <span class="sg-label">
+          class: u-bg-primary03<br />
+          variable: $primary03<br />
+          hex code: #f7f7f7
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-primary04"></span>
+        <span class="sg-label">
+          class: u-bg-primary04<br />
+          variable: $primary04<br />
+          hex code: #ffffff
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-primary05"></span>
+        <span class="sg-label">
+          class: u-bg-primary05<br />
+          variable: $primary05<br />
+          hex code: #00263e
+        </span>
+      </li>
+</ul>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"Colors","patternPartial":"atoms-colors","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,73 @@
+/* ==========================================================================
+   #UTILITIES : SPACINGS
+   ========================================================================== */
+
+/**
+ * Utility classes to put specific spacing values onto elements. The below loop
+ * will generate us a suite of classes like:
+ *
+ *           margin top = .u-mt    { margin-top: 8px !important  }
+ *   padding left large = .u-pl-lg { padding-left: 16px !important }
+ *   margin right small = .u-mr-sm { margin-right: 8px !important }
+ *              padding = .u-p     { padding: 16px !important }
+ *     no padding right = .u-pr-0  { padding-right: 0 !important }
+ *   .u-padding-horizontal {}
+ *   .u-padding-vertical-small {}
+ */
+
+ $u-spacing-breakpoints: (
+    null :  $breakpoint-xs, // Extra small sreen / phone         -- From    0px and up
+  "--sm" :  $breakpoint-sm, // Small screen / phone              -- From  576px and up
+  "--md" :  $breakpoint-md, // Medium screen / tablet            -- From  768px and up
+  "--lg" :  $breakpoint-lg, // Large screen / desktop            -- From  992px and up
+  "--xl" :  $breakpoint-xl  // Extra large screen / wide desktop -- From 1200px and up
+) !default;
+
+$u-spacing-directions: (
+  null : null,
+  "-top"        : "-top",
+  "-right"      : "-right",
+  "-bottom"     : "-bottom",
+  "-left"       : "-left",
+  "-horizontal" : "-left" "-right", // h stands for horizontal Left and Right
+  "-vertical"    : "-top" "-bottom", // V stands for vertical Top and Bottom
+) !default;
+
+$u-spacing-properties: (
+  "padding" : "padding",
+  "margin"  : "margin",
+) !default;
+
+$u-spacing: (
+   "-0" :  $spacing-0,   //  0px
+ "-xxs" :  $spacing-xxs, //  2px
+  "-xs" :  $spacing-xs,  //  4px
+  "-sm" :  $spacing-sm,  //  8px
+  "-md" :  $spacing-md,  // 16px
+  "-lg" :  $spacing-lg,  // 24px
+  "-xl" :  $spacing-xl,  // 32px
+ "-xxl" :  $spacing-xxl  // 40px
+) !default;
+
+
+@each $breakpoint-key, $breakpoint-value in $u-spacing-breakpoints {
+
+  @media (min-width: #{$breakpoint-value}) {
+
+    @each $property-namespace, $property in $u-spacing-properties {
+
+      @each $direction-namespace, $direction-rules in $u-spacing-directions {
+
+        @each $spacing-key, $spacing-value in $u-spacing {
+
+          .u-#{$property-namespace}#{$direction-namespace}#{$spacing-key}#{$breakpoint-key} {
+
+            @each $direction in $direction-rules {
+              #{$property}#{$direction}: $spacing-value !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

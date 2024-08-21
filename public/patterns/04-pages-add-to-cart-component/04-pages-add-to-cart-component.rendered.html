@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1724267739658" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1724267739658" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1724267739658" media="all">
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="">
+    
+<!-- - - - - - - - - - - - - -->
+<!-- COMPONENT : Add To Cart -->
+<!-- - - - - - - - - - - - - -->
+
+<div class="c-hero " style="background-image:url('https://usatcollege.files.wordpress.com/2014/09/139786707.jpg');">
+
+  <h1 class="c-hero__title u-font-light">Learn anything, anytime, anywhere</h1>
+
+  <p class="c-hero__content"></p>
+
+  <picture class="c-hero__picture">
+    <img class="c-hero__img c-hero__img--logo" src="../../../images/CengageUnlimited_LogoBlack.svg">
+  </picture>
+
+  <picture class="c-hero__picture c-hero__picture--bottom">
+    <img class="c-hero__img c-hero__img--bottom" src="../../../images/cenage-landing-people.png">
+  </picture>
+</div>
+
+<div class="c-add-to-cart">
+
+  <div class="c-add-to-cart__container">
+
+    <h2 class="c-add-to-cart__title u-font-light">Learn for less. a <span class="u-font-italic">lot</span> less.</h2>
+
+    <main class="c-add-to-cart__col-left">
+
+      <p class="u-margin-bottom-md u-font-semi-bold">Introducing a more affordable way to learn with Cengage Unlimited</p>
+
+      <ul class="e-list--checkmark">
+        <li>Unlimited access to 675+ online courses from 100+ partner higher education institutuons</li>
+        <li>Free, optional textbook rental</li>
+        <li>Unlimited access to 20,000 ebooks on 300 subjects</li>
+      </ul>
+
+      <div class="collapse" id="moreBenefitsContent">
+        <ul class="e-list--checkmark">
+          <li>Unlimited access to 675+ online courses from 100+ partner higher education institutuons</li>
+          <li>Free, optional textbook rental</li>
+          <li>Unlimited access to 20,000 ebooks on 300 subjects</li>
+        </ul>
+      </div>
+
+      <button class="c-btn c-btn--dark c-btn--text u-font-semi-bold u-margin-vertical-md" type="button" data-toggle="collapse" data-target="#moreBenefitsContent" aria-expanded="false" aria-controls="moreBenefitsContent">
+        See more benefits...
+      </button>
+
+
+
+    </main><!-- ./c-add-to-cart__col-left -->
+
+    <aside class="c-add-to-cart__col-right">
+      <p class="u-margin-bottom-lg h4">$119.<small>99</small></p>
+
+      <!-- Radio Button Group -->
+
+      <form>
+        <legend>
+          <p>I want access for:</p>
+        </legend>
+
+        <div role="group" aria-label="access length" class="c-btn-group c-btn-group--radio c-btn-group--pill">
+
+          <input class="form-check-input" type="radio" name="accessLength" id="4months" value="4month">
+          <label class="c-btn form-check-label" for="4months">4 months</label>
+
+          <input class="form-check-input" type="radio" name="accessLength" id="1year" value="1year">
+          <label class="c-btn form-check-label" for="1year">1 year</label>
+
+          <input class="form-check-input" type="radio" name="accessLength" id="2years" value="2years">
+          <label class="c-btn form-check-label" for="2years">2 years</label>
+        </div>
+
+        <button class="c-btn c-btn--pill c-btn--dark u-margin-vertical-lg u-width-100">
+          Subscribe now
+        </button>
+
+      </form>
+
+    </aside><!-- ./c-add-to-cart__col-right -->
+
+  </div><!-- ./c-add-to-cart__container -->
+
+</div><!-- ./c-add-to-cart -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternType":"pages"},"patternExtension":"mustache","patternName":"Add To Cart Component","patternPartial":"pages-add-to-cart-component","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,81 @@
+/*------------------------------------*/
+/* -- [ #TYPOGRAPHY ] ----------------*/
+/*------------------------------------*/
+
+/* -- [ TYPOGRAPHY : OPEN SANS ] -- */
+@font-face {
+	font-family: 'Open Sans Regular';
+	src: url('./fonts/open-sans/OpenSans-Regular.eot');
+	src: url('./fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		   url('./fonts/open-sans/OpenSans-Regular.ttf')        format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans SemiBold';
+	src: url('../fonts/open-sans/OpenSans-SemiBold.eot');
+	src: url('../fonts/open-sans/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+		   url('../fonts/open-sans/OpenSans-SemiBold.ttf')        format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('../fonts/open-sans/OpenSans-Bold.eot');
+	src: url('../fonts/open-sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		   url('../fonts/open-sans/OpenSans-Bold.ttf')        format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* max width of document */
+$max-width: 1440px;
+
+/* -- [ TYPOGRAPHY : FONT ] -- */
+
+$font-serif : "Stag Book", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$font-sans-serif: 'Open Sans Regular', Arial, Helvetica, sans-serif;
+$font-sans-serif-bold: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+$font-sans-serif-semibold: 'Open Sans SemiBold', Arial, Helvetica, sans-serif;
+
+/* -- [ TYPOGRAPHY : FONT WEIGHT ] -- */
+
+$font-light     : 100;
+$font-regular   : 400;
+$font-semi-bold : 600;
+$font-bold      : 700;
+
+$base-line-height: 1.2;
+
+/* -- [ TYPOGRAPHY : FONT SIZE ] -- */
+
+$base-font-size: 1rem;  // 16px
+
+/* -- [ TYPOGRAPHY : HEADERS ] -- */
+
+$h1-font-size: 3.75rem;  // 60px
+$h2-font-size: 3.125rem; // 50px
+$h3-font-size: 2.5rem;   // 40px
+$h4-font-size: 1.625rem; // 26px
+$h5-font-size: 1.375rem; // 22px
+$h6-font-size: 1.125rem; // 18px
+
+/* -- [ TYPOGRAPHY : FONTSIZE ] -- */
+
+  $font-size-xxs: 0.5rem;	  // 8px
+   $font-size-xs: 0.625rem;	// 10px
+   $font-size-sm: 0.750rem;	// 12px
+   $font-size-md: 0.875rem;	// 14px
+ $font-size-base: 1rem;     // 16px
+   $font-size-lg: 1.5rem;   // 24px
+   $font-size-xl: 2rem;     // 32px
+  $font-size-xxl: 3rem;     // 48px
+
+/* -- [ TYPOGRAPHY : DISPLAY ] -- */
+
+$display-1: 6rem;    // 96px
+$display-2: 4.5rem;  // 72px
+$display-3: 3.75rem; // 60px
+$display-4: 3.5rem;  // 56px

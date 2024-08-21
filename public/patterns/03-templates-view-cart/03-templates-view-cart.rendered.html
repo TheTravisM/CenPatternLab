@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1724267739658" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1724267739658" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1724267739658" media="all">
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="">
+    
+<body>
+  <header>
+  </header>
+  <main>
+    <section class="c-view-cart">
+
+      <div class="c-your-cart">
+        <h2 class="u-h2">Your Cart</h2>
+
+        <!-- https://getbootstrap.com/docs/4.0/examples/blog/ -->
+        <div class="u-flex">
+          <!-- Image -->
+          <div>
+            <a href="#">
+              <img>
+            </a>
+          </div>
+
+          <!-- Content -->
+          <div>
+            <a href="#">
+              <h3 class="u-h3">eBook: Practical Problems in Mathematics for Information Technology, 1st Edition</h3>
+            </a>
+
+            <ul>
+							<li><strong>Rental Length:</strong> 120 Days</li>
+							<li><strong>ISBN10: </strong> 1-133-48223-6</li>
+							<li><strong>ISBN13: </strong> 978-1-133-48223-9</li>
+							<li><strong>AUTHORS: </strong> Todd Verge</li>
+							<li class="copyrightYear">© 2009</li>
+						</ul>
+
+            <p>
+							Please note: This is an Instant Access Product.
+              <br>At the completion of your purchase simply go to "My Home" to access this product.
+						</p>
+
+            <p>
+              <a class="removeItem" id="catalogEntry_name_free_ebook" aria-label="Free 14 day Access to eBook: Medical Office Procedures with Medical Pegboard, 5th Edition" href="#">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                Free 14 day Access to eBook: Medical Office Procedures with Medical Pegboard, 5th Edition
+              </a>
+            </p>
+
+          <div>
+
+          <!-- Right Content -->
+          <div>
+            <button>Remove</button>
+            <div>$13.49</div>
+            <p>Availablility</p>
+            <span>IN STOCK</span>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="c-summary">
+
+        <h2 class="u-h2">Summary</h2>
+
+        <a href="#" class="c-button" role="button" aria-pressed="true">
+          Start Secure Checkout
+          <i class="fa fa-lock"></i>
+        </a>
+
+        <!-- Tax Collapse Component -->
+        <section class="c-tax-dropdown dropdown">
+          <button id="dropdownMenuButton" class="c-btn c-tax-collapse__btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Estimate Tax and Shipping
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <form method="post" class="c-tax-dropdown__form">
+              <div>
+                <label for="search" class="c-tax-dropdown__form__label is-vishidden">Search the site</label>
+                <input type="search" id="search" class="c-tax-dropdown__form__input" placeholder="Search the site" />
+                <button>Estimate</button>
+              </div>
+            </form><!-- end c-search-form -->
+            <p class="">
+            Shipping estimate is based on the lowest priced available option. You will be able to select other shipping options before submitting your order.
+            </p>
+          </div>
+        </section>
+
+        <!-- https://getbootstrap.com/docs/4.0/examples/checkout/ -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Third item</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$5</span>
+          </li>
+        </ul>
+
+        <hr>
+
+        <div>
+          <span>Subtotal:</span>
+          <span>$659.39</span>
+        </div>
+
+        <p>(Tax and Shipping are Estimates)</p>
+
+      </aside>
+
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"templates"},"patternExtension":"mustache","patternName":"View Cart","patternPartial":"templates-view-cart","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>

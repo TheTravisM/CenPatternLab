@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*------------------------------------*/
+/* -- SETTINGS -----------------------*/
+/*------------------------------------*/
+/*
+
+settings: Global variables, site-wide settings, config switches, etc.
+
+* SETTINGS
+* Config...............Project-level configuration and feature switches.
+* Core.................inuitcss’ core and setup settings.
+* Global...............Project-wide variables and settings.
+
+*/
+/* -- -----------------------  -- */
+/* -- [ SETTINGS : Boarders ] -- */
+/* -- -----------------------  -- */
+/* Borders */
+/*
+$border-color: $messer-warm-gray-50;
+$default-border: 1px solid $border-color;
+
+$border-radius-sm: 2px;
+$border-radius-lg: 5px;
+
+$box-shadow: 0 1px 1px rgba($header-color-dark, .3);
+*/
+/* -- Border Colors -- */
+/* -- Border Radius -- */
+/*------------------------------------*\
+    SETTINGS : BREAKPOINTS
+\*------------------------------------*/
+/* -- ---------------------------- -- */
+/* -- [ UTILITIES : BASE SPACING ] -- */
+/* -- ---------------------------- -- */
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear; }
+
+.fade.show {
+  opacity: 1; }
+
+.collapse {
+  display: none; }
+
+.collapse.show {
+  display: block; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease; }
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/* -- [ TYPOGRAPHY : OPEN SANS ] -- */
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("./fonts/open-sans/OpenSans-Regular.eot");
+  src: url("./fonts/open-sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url("../fonts/open-sans/OpenSans-SemiBold.eot");
+  src: url("../fonts/open-sans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/open-sans/OpenSans-Bold.eot");
+  src: url("../fonts/open-sans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+/* max width of document */
+/* -- [ TYPOGRAPHY : FONT ] -- */
+/* -- [ TYPOGRAPHY : FONT WEIGHT ] -- */
+/* -- [ TYPOGRAPHY : FONT SIZE ] -- */
+/* -- ---------------------  -- */
+/* -- [ Settings : Z-Index ] -- */
+/* -- ---------------------  -- */
+/* --  - - - - - - - - - -  -- */
+/* -- [ COMPONENT : MODAL ] -- */
+/* --  - - - - - - - - - -  -- */
+.c-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000; }
+  .c-modal--small .c-modal__content {
+    max-width: 300px; }
+  .c-modal--large .c-modal__content {
+    max-width: 900px; }
+  .c-modal__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3); }
+  .c-modal__content {
+    align-content: flex-start;
+    background: #FFF;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 0;
+    margin: 40px auto;
+    max-width: 600px;
+    position: fixed;
+    left: 50% !important;
+    top: 40% !important;
+    transform: translate(-50%, -50%); }
+  .c-modal__header {
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    padding: 1rem; }
+  .c-modal__title {
+    color: #0085ca;
+    line-height: 1;
+    font-size: 28px;
+    flex-grow: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .c-modal__btn-close {
+    align-self: flex-start;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: 0;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    color: #7a7a7a;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: -1rem;
+    margin-right: -1rem;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    speak: none; }
+    .c-modal__btn-close:hover {
+      color: #575757; }
+  .c-modal__body {
+    padding: 20px; }
+  .c-modal__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dfdfdf; }
+    .c-modal__footer > :not(:last-child) {
+      margin-right: 0.5rem; }

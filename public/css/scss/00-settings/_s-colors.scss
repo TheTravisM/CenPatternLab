@@ -1,0 +1,89 @@
+// -- --------------------- -- //
+// -- [ SETTINGS : COLORS ] -- //
+// -- --------------------- -- //
+
+// - [ PRIMARY COLORS ] - //
+$primary01: #3f3f3f;
+$primary02: #0085ca;
+$primary03: #f7f7f7;
+$primary04: #ffffff;
+$primary05: #00263e;
+
+$primary-colors: (
+  primary01:  $primary01, //  #3f3f3f
+  primary02:  $primary02, //  #0085ca
+  primary03:  $primary03, //  #f7f7f7
+  primary04:  $primary04, //  #fff
+  primary05:  $primary05, // #00263e
+) !default;
+
+// - [ SECONDARY COLORS ] -- //
+$secondary01: #003865;
+$secondary02: #00a9e0;
+$secondary03: #575757;
+$secondary04: #7a7a7a;
+$secondary05: #bfbfbf;
+$secondary06: #dfdfdf;
+$secondary07: #006298;
+$secondary08: #71c5e8;
+$secondary09: #87d6f8;
+$secondary10: #d0d3d4;
+
+$secondary-colors: (
+  secondary01: $secondary01, // #003865;
+  secondary02: $secondary02, // #00a9e0;
+  secondary03: $secondary03, // #575757;
+  secondary04: $secondary04, // #7a7a7a;
+  secondary05: $secondary05, // #bfbfbf;
+  secondary06: $secondary06, // #dfdfdf;
+  secondary07: $secondary07, // #006298;
+  secondary08: $secondary08, // #71c5e8;
+  secondary09: $secondary09, // #87d6f8;
+  secondary10: $secondary10, // #d0d3d4;
+) !default;
+
+// - [ ACCENT COLORS ] -- //
+$accent01: #5c8216;
+$accent02: #6f9823;
+$accent03: #90b82e;
+$accent04: #c1510a;
+$accent05: #fa6600;
+$accent06: #f2a900;
+
+$accent-colors: (
+  accent01: $accent01, // #5c8216;
+  accent02: $accent02, // #6f9823;
+  accent03: $accent03, // #90b82e;
+  accent04: $accent04, // #c1510a;
+  accent05: $accent05, // #fa6600;
+  accent06: $accent06, // #f2a900;
+) !default;
+
+// - [ LIMITED COLORS ] -- //
+$limited01: #ef0000;
+$limited02: #ff5858;
+$limited03: #ececec;
+$limited04: #e0004d;
+$limited05: #ffc72c;
+
+$limited-colors: (
+  limited01: $limited01, // #ef0000;
+  limited02: $limited02, // #ff5858;
+  limited03: $limited03, // #ececec;
+  limited04: $limited04, // #e0004d;
+  limited05: $limited05, // #ffc72c;
+) !default;
+
+// - [ context-specific variables  COLORS ] -- //
+$brand-primary: $primary02;
+$brand-success: $accent02;
+$brand-info: $secondary02;
+$brand-warning: $accent05;
+$brand-danger: $limited01;
+$text-color: $primary01;
+$link-color: $primary02;
+$headings-color: $primary02;
+$component-active-bg: $primary03;
+$code-color: $primary01;
+$code-bg: $secondary06;
+$white: #fff;

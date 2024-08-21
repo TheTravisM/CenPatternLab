@@ -1,0 +1,63 @@
+/* -- --------------------  -- */
+/* -- [ UTILITIES : FLOAT ] -- */
+/* -- --------------------  -- */
+
+.u-float-left {
+  float: left !important;
+}
+
+.u-float-right {
+  float: right !important;
+}
+
+.u-float-none {
+  float: none !important;
+}
+
+@media (min-width: 576px) {
+  .u-float-sm-left {
+    float: left !important;
+  }
+  .u-float-sm-right {
+    float: right !important;
+  }
+  .u-float-sm-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-float-md-left {
+    float: left !important;
+  }
+  .u-float-md-right {
+    float: right !important;
+  }
+  .u-float-md-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .u-float-lg-left {
+    float: left !important;
+  }
+  .u-float-lg-right {
+    float: right !important;
+  }
+  .u-float-lg-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .u-float-xl-left {
+    float: left !important;
+  }
+  .u-float-xl-right {
+    float: right !important;
+  }
+  .u-float-xl-none {
+    float: none !important;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1724267739658" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1724267739658" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1724267739658" media="all">
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="">
+    
+<ul class="sg-colors">
+      <li>
+        <span class="sg-swatch u-bg-limited01"></span>
+        <span class="sg-label">
+          class: u-bg-limited01<br />
+          variable: $limited01<br />
+          hex code: #ef0000
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-limited02"></span>
+        <span class="sg-label">
+          class: u-bg-limited02<br />
+          variable: $limited02<br />
+          hex code: #ff5858
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-limited03"></span>
+        <span class="sg-label">
+          class: u-bg-limited03<br />
+          variable: $limited03<br />
+          hex code: #ececec
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-limited04"></span>
+        <span class="sg-label">
+          class: u-bg-limited04<br />
+          variable: $limited04<br />
+          hex code: #e0004d
+        </span>
+      </li>
+      <li>
+        <span class="sg-swatch u-bg-limited05"></span>
+        <span class="sg-label">
+          class: u-bg-limited05<br />
+          variable: $limited05<br />
+          hex code: #ffc72c
+        </span>
+      </li>
+</ul>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>The limited color palette is reserved for very specific uses and is not considered a core part of the overall scheme</p>\n","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"Limited Colors","patternPartial":"atoms-colors-04limited","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>

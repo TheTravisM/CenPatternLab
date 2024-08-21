@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1724267739658" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1724267739658" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1724267739658" media="all">
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="">
+    
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+  
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+	
+<div id="viewall-pages-cengage unlimited" class="pl-c-category">
+		
+	<h2 class="pl-c-category__title">
+		<a href="../../patterns/04-pages-cengage unlimited&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-pages-cengage unlimited">cengage unlimited</a>
+	</h2><!--end pl-c-category__title-->
+
+	<div class="pl-c-category__description pl-c-text-passage">
+		
+	</div><!--end pl-c-category__description-->
+	
+</div><!--end pl-c-category-->
+	<div id="pages-billing-and-shipping" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/04-pages-cengage unlimited-billing-and-shipping&#x2F;04-pages-cengage unlimited-billing-and-shipping.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="pages-billing-and-shipping" title="Link to Pattern">
+				Billing And Shipping
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-pages-billing-and-shipping" data-patternpartial="pages-billing-and-shipping" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-pages-billing-and-shipping">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-pages-billing-and-shipping" class="pl-js-pattern-data">
+	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"cengage unlimited"},"patternExtension":"mustache","patternName":"Billing And Shipping","patternPartial":"pages-billing-and-shipping","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	</script>
+
+</div><!--end pl-c-pattern--><div id="pages-my-orders" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/04-pages-cengage unlimited-my-orders&#x2F;04-pages-cengage unlimited-my-orders.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="pages-my-orders" title="Link to Pattern">
+				My Orders
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-pages-my-orders" data-patternpartial="pages-my-orders" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-pages-my-orders">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-pages-my-orders" class="pl-js-pattern-data">
+	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"cengage unlimited"},"patternExtension":"mustache","patternName":"My Orders","patternPartial":"pages-my-orders","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	</script>
+
+</div><!--end pl-c-pattern-->
+  </div><!--end pl-c-pattern-index-->
+
+</div><!--end pl-c-main-->
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-pages-all"}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1724267739658">
+  (function() {
+    if (self != top) {
+      var cb = '1724267739658';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>
